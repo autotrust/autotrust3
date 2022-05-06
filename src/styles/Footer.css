@@ -17,7 +17,7 @@
 #foot{
     margin-top: 30px;
     text-align: center;
-    /* font-weight: bold; */
+    font-weight: bold;
     font-family: 'Oswald';
     color: black;
     font-size: 14px;
@@ -27,7 +27,7 @@
 #foot1{
     margin-top: 30px;
     text-align: center;
-    /* font-weight: bold; */
+    font-weight: bold;
     font-family: 'Oswald';
     color: black;
     font-size: 14px;
@@ -54,6 +54,6 @@
     font-family:'Exo';
 }
 h6{
-    /* font-weight: bold; */
+    font-weight: bold;
     font-size: 15px;
 }

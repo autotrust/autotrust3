@@ -3,6 +3,7 @@ import '../styles/home.css';
 import Header from '../components/header'
 import Imgslider from '../components/poster'
 import Section from '../components/section';
+import Middle from '../components/middle';
 import Contact from '../components/Navigation/Footer';
 import axios from 'axios';
  
@@ -40,13 +41,14 @@ export default function Home(){
             <Header/>
             <Imgslider/>
             <Section/>
-            <div>
+            <Middle/>
+            {/* <div>
                 {Data.map(info => {
                     return<div className='table'>
                         <div className="c1"><h2>{info.at_vehicleid} {info.vin_number} {info.engine_number} {info.reg_number}</h2></div>
                         </div>
                 })}
-            </div>
+            </div> */}
             {/* <div className='vehicleList'>
                 {vehicles.map(vehicle => {
                     return <div className='vehicleCard'>

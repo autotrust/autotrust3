@@ -1,5 +1,5 @@
 import React from "react";
-import {BiLock} from 'react-icons/bi';
+// import {BiLock} from 'react-icons/bi';
 import '../styles/header.css';
 import Logo from '../assets/DesignImages/ATFullIcon2.png'
 import 'bootstrap/dist/css/bootstrap.css';
@@ -11,13 +11,13 @@ export default function Header(){
         <div class="container-fluid">
             <div class="row">
                 <div class="col-3">
-                   <Link to ="/"> <img className="logo" src={Logo} height="40"></img></Link>
+                   <Link to ="/"> <img className="logo" src={Logo} height="35"></img></Link>
                 </div>
                 <div id="middle" class ="col-6">
                 <ul>
                     <NavLink exact activeClassName="active" to='/components/Pland'>PERSONAL</NavLink>
                     <NavLink exact activeClassName="active" to='/components/Cland'>CORPORATE</NavLink>
-                    <button class="button buttons">GOVERNMENT</button>
+                    <button id="gvbt" class="button buttons">GOVERNMENT</button>
                     <NavLink exact activeClassName="active" to='/components/Conland'>CONTACT</NavLink>
                 </ul>
                 {/* <a href="/components/Pland" class="button buttons">PERSONAL</a>
@@ -28,7 +28,7 @@ export default function Header(){
                 </div>
                 <div id="dd" class ="col-2">
                     <li class="dropdown">
-                    <button class="dropbtn"><BiLock/> SECURE SIGN IN</button>
+                    <button class="dropbtn">SECURE SIGN IN</button>
                     <div class="dropdown-content">
                             <a class="dropdown-item" href="/components/Psignup">Personal</a>
                             <div class="dropdown-divider"></div>

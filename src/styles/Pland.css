@@ -25,13 +25,18 @@
     image-resolution: 100*40px;
 }
 #f{
-    font-family: Montserrat;
+    font-family: Oswald;
     font-size: 24px;
-    font-weight: 600;
+    /* font-weight: 600; */
+}
+
+.bolded{
+    font-weight: 900;
 }
 
 #tt{
-    font-size: 15px;
+    font-size: 16px;
+    font-family: Montserrat;
 }
 
 .Box{
@@ -80,12 +85,13 @@
     color: #fff;
     background-color:#91701e;
     width: 65%;
-    box-sizing: border-box;
+    /* box-sizing: content-box; */
+    border:none;
     border-radius: 2px;
     height: 40px;
-    box-shadow: 1px 1px black;
-    font-size: 19px;
-    font-family:Monsterrat;
+    box-shadow: 1px 1px 1px black;
+    font-size: 16px;
+    font-family:Exo;
     margin-bottom: 5px;
 }
 
@@ -95,8 +101,9 @@
     width: 30%;
     box-sizing: border-box;
     border-radius: 6px;
+    border:none;
     height: 40px;
-    /* box-shadow: 1px 1px black; */
+    box-shadow: 1px 1px 1px black;
     font-size: 19px;
     font-family:Exo;
     margin-bottom: 5px;
@@ -109,6 +116,7 @@
     width: 30%;
     box-sizing: border-box;
     border-radius: 5px;
+    border:none;
     height: 40px;
     font-size: larger;
     font-family:Exo;

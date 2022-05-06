@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import car from "../assets/DesignImages/car-g2d7b1eca2_1280.png"
 import Header from '../components/header';
 import Contact from '../components/Navigation/Footer';
@@ -6,7 +6,7 @@ import {BiLock} from 'react-icons/bi';
 import {Auth, Hub} from 'aws-amplify';
 import {IoMdContact} from 'react-icons/io';
 import Logo from '../assets/DesignImages/ATFullIcon2.png';
-import { Link, Navigate } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import PlandSi from './PlandSi';
 
 const initialFormState = {
@@ -89,22 +89,22 @@ function CorpSignin(){
                     <Header/>
                     <div id="k" className="col-4">
                     <h3>Corporate Sign In</h3>
-                    <div id="bd">
+                    {/* <div id="bd"> */}
                     {/* <form onSubmit={onSubmit}> */}
                     {/* <label>COMPANY CODE</label>
                     <input id='ipb' onChange={onChange} name='name' placeholder="Enter your Company code" required/><br/> */}
                     <label>EMAIL</label>
                     {/* <input name='username' id='ipb' onChange={onChange} placeholder='username'/> */}
-                    <input id='ipb' type="email" name='email' onChange={onChange} placeholder='Enter your email Id'/>
+                    <input id='ipb' type="email" name='email' onChange={onChange} placeholder='Enter your email Id' required/>
                     <label>PASSWORD</label>
-                    <input name='password' id='ipb' type='password' onChange={onChange} placeholder='Enter password'/>
+                    <input name='password' id='ipb' type='password' onChange={onChange} placeholder='Enter password' required/>
                     <label id ="para">Forgot Password?</label><br/><br/>
                     {/* <label id='para'>
                     <input type="checkbox" onChange={this.handleChange}/>
                     {' '}Remember me on this browser</label> */}
                     <button onClick={signIn}id="bt"><BiLock/>{' '}Secure Sign In</button>
                     {/* </form> */}
-                </div>
+                {/* </div> */}
                 </div>
                 <div className="col-7">
                             <img id="cp" src={car} alt="car" width="500" height="250"/>

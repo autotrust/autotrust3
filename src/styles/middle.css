@@ -22,7 +22,7 @@
     border: 1px;
     padding: 10px;
     box-shadow: 5px 5px #1E2E27;
-    height: 180px
+    height: 192px
     ;
   }
   #ks{
@@ -31,7 +31,7 @@
 }
   #hd{
     font-family: 'Exo';
-    color: #be911f;
+    color: #947200;
     align-self: start;
     float: left;
     font-weight: 300;

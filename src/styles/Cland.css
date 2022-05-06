@@ -136,6 +136,8 @@ div.containernew1{
     background-color:#0e4d3b;
     width: 30%;
     box-sizing: border-box;
+    border: none;
+    box-shadow: 1px 1px 1px black;
     border-radius: -1px;
     height: 50px;
     font-size: medium;
@@ -189,7 +191,8 @@ div.containernew1{
     /* float:right; */
     /* margin-top: 90px;
     margin-right: -1.5%; */
-
+    border: none;
+    box-shadow: 1px 1px 1px black;
     color: #fff;
     background-color:#be911f;
     /* width: 100%; */

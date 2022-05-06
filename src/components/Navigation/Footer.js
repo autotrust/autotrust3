@@ -28,6 +28,7 @@ export default function Contact(){
                 </div>
                 <div className="col" id="foot2">
                     <h6>Find us on</h6>
+                    <br/>
                     <div className="det">
                     <FontAwesomeIcon icon={faFacebook} size="2x"/>{' '}
                     <FontAwesomeIcon icon={faInstagram} size="2x"/>{' '}

@@ -17,18 +17,20 @@ export default function PlandSi(){
                     <h2 id="hd11">
                         Generate AUTOTRUST Report
                     </h2>
-                    <input type="number" id="iprp" placeholder="ENTER QUSBEN NUMBER" required/>
-                    <input type="number" id="iprp" placeholder="ENTER KUBSOKA NUMBER" required/>
+                    <form>
+                    <input  id="iprp" placeholder="ENTER QUSBEN NUMBER" required/>
+                    <input  id="iprp" placeholder="ENTER KUBSOKA NUMBER" required/>
                     <ul id="rety">Report Type *</ul>
                     {/* <input type="radio"></input><label id="rt">{' '}BASIC</label><br/>
                     <input type="radio"/><label id="rt">{' '}PREMIUM</label> */}
                     <div className="rep">
                     <input type="radio" id="rk" name="fav_language" value="CSS"/>
                     <label id="rt" for="css">{' '}BASIC</label><br/><br/>
-                    <input type="radio" id="rk" name="fav_language" value="CSS"/>
+                    <input type="radio" id="rk" name="fav_language" value="CSS" checked/>
                     <label id="rt" for="css">PREMIUM</label><br/><br/>
                     <button id="bt2">Generate Report</button>
                     </div>
+                    </form>
                     </div>
                     
                 </div>

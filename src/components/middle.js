@@ -11,6 +11,8 @@ export default function Middle(){
                     <h1 id="hd">The Benchmark 
                     <br/>
                     JUE Ihrvn
+                    <br/>
+                    <br/>
                     </h1>
                     <p id="ks" >nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis jefuwkeg fhkeg hdfvje</p>
                     </div>
@@ -20,6 +22,7 @@ export default function Middle(){
                     <h1 id="hd">UJSKICIES nueh inked
                     <br/>
                     yqkch</h1>
+                    <br/>
                     <p id="ks">nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis jefuwkeg fhkeg hdfvje</p>
                     </div>
                 </div>
@@ -28,6 +31,7 @@ export default function Middle(){
                     <h1 id="hd">AUTHENTIC
                     {/* <br/> */}
                     </h1>
+                    <br/>
                     <p id="ks">
                         <br/>in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non</p>
                     </div>

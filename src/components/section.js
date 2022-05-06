@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/section.css'
-import Middle from "./middle";
+// import Middle from "./middle";
 export default function Section(){
     return(
         <div className="container1">
@@ -17,7 +17,7 @@ export default function Section(){
                 <br/>
                 <br/>
                 <br/>
-                <Middle/>
+                
             </div>
         </div>
     )

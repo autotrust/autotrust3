@@ -29,7 +29,7 @@ export default function Imgslider(){
               <div id='rr' class="carousel-item active">
                 <div id="slr" className='row' >
                 <div id="txt" className='col-2'>
-                <h4>a diam sollicitudin tempor id eu nisl</h4>
+                <h4 id='spar'>a diam sollicitudin tempor id eu nisl</h4>
                 </div>
                 <div id='fp' className='col-2'>
                   <img src={pic1}  alt="image" height="160" width="60"></img>
@@ -42,7 +42,7 @@ export default function Imgslider(){
               <div id='rr' class="carousel-item">
                 
               <div id="txt2" className='col'>
-              <h4>massa vitae tortor condimentum lacinia quis vel eros</h4>
+              <h4 id='spar'>massa vitae tortor condimentum lacinia quis vel eros</h4>
               </div>
               <div id="sp1" className='col'>
                   <img src={pic3} alt="image" height="300" width="100"></img>
@@ -53,7 +53,7 @@ export default function Imgslider(){
               </div>
               <div id='rr' class="carousel-item">
                 <div id="txt1" className='col'>
-              <h4>lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc</h4>
+              <h4 id='spar'>lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc</h4>
               </div>   
               <div id="sp2" className='col'>
 

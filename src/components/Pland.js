@@ -21,6 +21,7 @@ export default function Pland(){
                         <div className="col-1"  id = "ac">
                            <p id="f">
                            nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur
+                           egruuaue dduas dassbdas <span class="bolded">qwerty</span>
                            </p>
                            {/* <br/> */}
                            <p id="tt">
@@ -53,7 +54,7 @@ export default function Pland(){
                     <input type="radio" id="rk" name="fav_language" value="CSS"/>
                     <label id="rt" for="css">{' '}BASIC</label><br/>
                     <br/>
-                    <input type="radio" id="rk" name="fav_language" value="CSS"/>
+                    <input type="radio" id="rk" name="fav_language" value="CSS" checked/>
                     <label id="rt" for="css">PREMIUM</label><br/><br/>
                     <button id="grbt">Generate Report</button>
                     {/* <Link to="/components/Psignup"><button id="bt2" >Generate Report</button></Link> */}
