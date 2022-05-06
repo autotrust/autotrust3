@@ -64,9 +64,6 @@ function Signup() {
                     if(data.payload.data.message==="Custom auth lambda trigger is not configured for the user pool."){
                             alert("Password is required!")
                         }
-                    if(data.payload.data.message==="Username cannot be empty."){
-                        alert("Email is required!")
-                    }
                     else{
                         alert(data.payload.data.message)
                         }

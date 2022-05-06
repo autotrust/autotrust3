@@ -1,6 +1,6 @@
 import React from "react";
-import Contact from "./Navigation/Footer";
-import Header from "./header";
+// import Contact from "./Navigation/Footer";
+// import Header from "./header";
 import '../styles/PlandSi.css';
 // import npic from "/AT_Snapshots/DesignImages/Feature_Image.png"
 export default function PlandSi(){
@@ -62,7 +62,7 @@ export default function PlandSi(){
                             <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon"></span>
                             </a>
-                            <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                            <a id="next" class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
                                 <span class="carousel-control-next-icon"></span>
                             </a>
                         </div>
