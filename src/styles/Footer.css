@@ -17,21 +17,21 @@
 #foot{
     margin-top: 30px;
     text-align: center;
-    font-weight: bold;
-    font-family: 'Exo';
+    /* font-weight: bold; */
+    font-family: 'Oswald';
     color: black;
     font-size: 14px;
+    margin-left: 160px;
 }
 
 #foot1{
     margin-top: 30px;
     text-align: center;
-    font-weight: bold;
-    font-family: 'Exo';
+    /* font-weight: bold; */
+    font-family: 'Oswald';
     color: black;
     font-size: 14px;
-
-    margin-right: -800px;
+    margin-right: -1000px;
 }
 
 #foot2{
@@ -41,7 +41,6 @@
     font-family: 'Exo';
     color: black;
     font-size: 14px;
-
     margin-left: -800px;
 }
 .det{
@@ -51,9 +50,10 @@
 }
 #copy{
     color: black;
-    font-size: medium;
+    font-size: 12px;
     font-family:'Exo';
 }
 h6{
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size: 15px;
 }

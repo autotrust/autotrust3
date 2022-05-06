@@ -62,8 +62,21 @@
 
 .containernew{
     background: linear-gradient(90deg, white, #947200);
+    width: 99%;
+    border-radius: 10px;
 }
 
+.nblock{
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 1px;
+    padding: 10px;
+    height: 290px;
+    width: 500px;
+    margin-top: 15%;
+    margin-left: 163px;
+}
 
 .block{
     text-align: center;
@@ -74,7 +87,7 @@
     height: 290px;
     width: 500px;
     margin-top: 15%;
-    margin-left: 130px;
+    margin-left: 136px;
 }
 #clm{
     margin-bottom: 40px;
@@ -86,7 +99,10 @@
 
 div.containernew1{
     height: auto;
-    background: linear-gradient(90deg,#0e4d3b,white);  
+    background: linear-gradient(90deg,#0e4d3b,white);
+    width: 95%;
+    margin-left: 25px;
+    border-radius: 10px;  
 }
 
 .block3{
@@ -136,7 +152,7 @@ div.containernew1{
     border: 1px;
     /* padding: 10px; */
     height: 90%;
-    width: 65%;
+    width: 70%;
     margin-left: 60%;
     margin-top: 5%;
     background-image: url('../assets/DesignImages/Dashboard_2.png');
@@ -167,6 +183,13 @@ div.containernew1{
 }
 
 #bt3{
+    width: 41%;
+    border-radius: 5px;
+    height: 50px;
+    /* float:right; */
+    /* margin-top: 90px;
+    margin-right: -1.5%; */
+
     color: #fff;
     background-color:#be911f;
     /* width: 100%; */
@@ -175,9 +198,9 @@ div.containernew1{
     /* height: 50px; */
     font-size: medium;
     font-family:Exo;
-    margin-left: -100px;
+    margin-left:-120px;
     margin-top: 45%;
-    box-shadow: 1px 1px #1e2e27;
+    /* box-shadow: 1px 1px #1e2e27; */
 }
 
 .list{
@@ -191,6 +214,7 @@ div.containernew1{
 #xx{
     color: #be911f;
     font-size: small;
+    font-family: Montserrat;
 }
 
 #kss{
@@ -214,7 +238,7 @@ div.containernew1{
         font-weight: 300;
         text-align: left;
         max-width: 65%;
-        
+        margin-left: 15px;
 }
 
 #hd13{
@@ -225,8 +249,14 @@ div.containernew1{
     font-weight: 300;
 }
 
+.piccontainer{
+    margin-bottom: 10px;
+    margin-top: -40px;
+}
+
+
 #ba{
-    margin-right: 15%;
+    margin-right: 30%;
 }
 
 #dc{

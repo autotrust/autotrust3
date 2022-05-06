@@ -95,7 +95,7 @@ function CorpSignin(){
                     <input id='ipb' onChange={onChange} name='name' placeholder="Enter your Company code" required/><br/> */}
                     <label>EMAIL</label>
                     {/* <input name='username' id='ipb' onChange={onChange} placeholder='username'/> */}
-                    <input id='ipb' type="email" name='username' onChange={onChange} placeholder='Enter your email Id'/>
+                    <input id='ipb' type="email" name='email' onChange={onChange} placeholder='Enter your email Id'/>
                     <label>PASSWORD</label>
                     <input name='password' id='ipb' type='password' onChange={onChange} placeholder='Enter password'/>
                     <label id ="para">Forgot Password?</label><br/><br/>

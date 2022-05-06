@@ -25,8 +25,8 @@ export default function Conland(){
                         our Sales Team or simply drop in your details and we'll get back to you asap.
                     </p>
                     <br/>
-
-                    <a id="bt4" href="/components/conSales">Contact Sales</a>
+                    <Link to="/components/conSales"><button id="csbt">Contact Sales</button></Link>
+                    {/* <a id="csbt" href="/components/conSales">Contact Sales</a> */}
                     </div>
                     <div className="ncol1">
                         <img id="cs" src={support} alt="supportimg" height={100} width="100"/>
@@ -35,7 +35,7 @@ export default function Conland(){
                         looking for, we're here to lend a hand.
                     </p>
                     <br/>
-                    <button id="bt4">Customer Support</button>
+                    <button id="csbt1">Customer Support</button>
                     </div>
                 </div>
             </div>    

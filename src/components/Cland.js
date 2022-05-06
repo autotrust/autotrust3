@@ -113,7 +113,7 @@ export default function Cland(){
             {/* <img src={kpic2} alt="picture" height="400" width="400"/> */}
             </div>
             <div className='colmn'>
-                <div className="block">
+                <div className="nblock">
                 <h1 id="hd13">Ujwwbjauxi Liwhqand</h1>
                     <p id="kss">The <span class="bolded">feature</span> layout is built with <span class="bolded">flex</span>, like the <span class="bolded">hero</span> layout. Don't like our typsetting? You
             can update every detail in the typography section of thr Style panel.</p>

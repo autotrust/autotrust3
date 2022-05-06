@@ -28,7 +28,7 @@ export default function Header(){
                 </div>
                 <div id="dd" class ="col-2">
                     <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn"><BiLock/> SECURE SIGN IN</a>
+                    <button class="dropbtn"><BiLock/> SECURE SIGN IN</button>
                     <div class="dropdown-content">
                             <a class="dropdown-item" href="/components/Psignup">Personal</a>
                             <div class="dropdown-divider"></div>

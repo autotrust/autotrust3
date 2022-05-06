@@ -46,29 +46,37 @@ function Signup() {
     async function authHandler(){
         Hub.listen('auth', (data) => {
             switch (data.payload.event) {
-              case 'signIn':
-                  console.log('user signed in', data.payload.message);
-                  window.location.reload(false);
-                  break;
-              case 'signUp':
-                  console.log('user signed up');
-                  break;
-              case 'signOut':
-                  console.log('user signed out', data.payload.message);
-                //   alert(data.payload.message)
-                  updateFormState(()=>({...formState, formType:'main'}))
-                
-                  break;
-              case 'signIn_failure':
-                  console.log('user sign in failed');
-                  alert(data.payload.data.message)
-                  break;
-            case 'signUp_failure':
-                    console.log('user sign up failed : ', data.payload.data.message)
-                    alert(data.payload.data.message)
+                case 'signIn':
+                    console.log('user signed in', data.payload.message);
+                    window.location.reload(false);
                     break;
-              case 'configured':
-                  console.log('the Auth module is configured');
+                case 'signUp':
+                    console.log('user signed up');
+                    break;
+                case 'signOut':
+                    console.log('user signed out', data.payload.message);
+                    //   alert(data.payload.message)
+                    updateFormState(()=>({...formState, formType:'main'}))
+                    
+                    break;
+                case 'signIn_failure':
+                    console.log('user sign in failed');
+                    if(data.payload.data.message==="Custom auth lambda trigger is not configured for the user pool."){
+                            alert("Password is required!")
+                        }
+                    if(data.payload.data.message==="Username cannot be empty."){
+                        alert("Email is required!")
+                    }
+                    else{
+                        alert(data.payload.data.message)
+                        }
+                    break;
+                case 'signUp_failure':
+                        console.log('user sign up failed : ', data.payload.data.message)
+                        alert(data.payload.data.message)
+                        break;
+                case 'configured':
+                    console.log('the Auth module is configured');
             }
           });
     }
@@ -250,11 +258,11 @@ function Signup() {
                     {/* <label>USERNAME</label>
                     <input id='ipb' name='username' onChange={onChange} placeholder='username'/> */}
                     <label>EMAIL</label>
-                    <input id='ipb' name='email' onChange={onChange} placeholder='Enter your registered email Id' required/>
+                    <input id='ipb' name='email' type="email" onChange={onChange} placeholder='Enter your registered email Id' required/>
                     <p id='par' onClick={() => updateFormState(()=>({...formState, formType:'signUp'}))}>Haven't registered? Sign Up Now </p>
                     <label>PASSWORD</label>
                     <input name='password' id='ipb' type="password" onChange={onChange} placeholder='Enter password' required/>
-                    <p id="para" onClick={() => updateFormState(()=>({...formState, formType:'forgotPassword'}))} >Forgot Password?</p>
+                    <p id="par" onClick={() => updateFormState(()=>({...formState, formType:'forgotPassword'}))} >Forgot Password?</p>
                     <label><input type="checkbox"/>{' '}Remember me on this browser</label>
                     <button onClick={signIn} id="bt">{' '}Secure Sign In</button>
                     

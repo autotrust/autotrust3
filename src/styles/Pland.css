@@ -30,6 +30,10 @@
     font-weight: 600;
 }
 
+#tt{
+    font-size: 15px;
+}
+
 .Box{
     text-align: center;
     background-color: #115542 ;
@@ -72,6 +76,33 @@
     float: none;
 }
 
+#lbt{
+    color: #fff;
+    background-color:#91701e;
+    width: 65%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 40px;
+    box-shadow: 1px 1px black;
+    font-size: 19px;
+    font-family:Monsterrat;
+    margin-bottom: 5px;
+}
+
+#grbt{
+    color: #fff;
+    background-color:#ac8523;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    height: 40px;
+    /* box-shadow: 1px 1px black; */
+    font-size: 19px;
+    font-family:Exo;
+    margin-bottom: 5px;
+}
+
+
 #bt1{
     color: #fff;
     background-color:#be911f;
@@ -87,6 +118,7 @@
 #rety{
     color: white;
     margin-right: 70px;
+    font-size: 12px;
 }
 
 .container-p{
