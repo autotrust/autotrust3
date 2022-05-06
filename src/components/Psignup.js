@@ -48,6 +48,7 @@ function Signup() {
             switch (data.payload.event) {
               case 'signIn':
                   console.log('user signed in', data.payload.message);
+                  window.location.reload(false);
                   break;
               case 'signUp':
                   console.log('user signed up');
@@ -276,7 +277,7 @@ function Signup() {
                             <div class="container-fluid">
             <div class="row">
                 <div class="col-3">
-                   <Link to ="/components/Psignup"> <img className="logo" src={Logo} height="40"></img></Link>
+                <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40"></img>
                 </div>
                 <div id="middle1" class ="col-6">           
                 <button class="bts1">GENERATE REPORT</button>
@@ -284,7 +285,7 @@ function Signup() {
                 </div>
                 <div id="dd" class ="col-2">
                     <li class="dropdown">
-                    <a id='uname' href="javascript:void(0)" class="dropbtn"><IoMdContact/>{' '}</a>
+                    <a id='uname' href="javascript:void(0)" class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</a>
                     <div  class="dropdown-content">
                             <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                             <div class="dropdown-divider"></div>
@@ -313,7 +314,7 @@ function Signup() {
                                     </div>
                                     <div id="dd" class ="col-2">
                                         <li class="dropdown">
-                                        <a id='uname' href="javascript:void(0)" class="dropbtn"><IoMdContact/>{' '} </a>
+                                        <a id='uname' href="javascript:void(0)" class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</a>
                                         <div  class="dropdown-content">
                                                 <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                                                 <div class="dropdown-divider"></div>
