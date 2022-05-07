@@ -1,18 +1,18 @@
 import React, {useState, useEffect} from 'react';
-import Home from './home';
+// import Home from './home';
 import { Navigate } from 'react-router-dom';
 import "../styles/psignup.css";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Header from './header';
 import PlandSi from './PlandSi';
 import car  from "../assets/DesignImages/car-g2d7b1eca2_1280.png"
 import Contact from './Navigation/Footer';
-import {BiLock} from 'react-icons/bi';
+// import {BiLock} from 'react-icons/bi';
 import {IoMdContact} from 'react-icons/io';
 import Logo from '../assets/DesignImages/ATFullIcon2.png'
 import '../styles/PlandSi.css';
 import {Auth, Hub} from 'aws-amplify';
-import axios from 'axios';
+// import axios from 'axios';
 
 const initialFormState = {
     username:'',

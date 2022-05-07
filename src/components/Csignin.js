@@ -35,6 +35,7 @@ function CorpSignin(){
             switch (data.payload.event) {
                     case 'signIn':
                         console.log('user signed in', data);
+                        window.location.reload(false);
                         break;
                     case 'signUp':
                         console.log('user signed up');
@@ -46,7 +47,12 @@ function CorpSignin(){
                         break;
                     case 'signIn_failure':
                         console.log('user sign in failed');
-                        alert(data.payload.data.message)
+                        if(data.payload.data.message==="Custom auth lambda trigger is not configured for the user pool."){
+                            alert("Password is required!")
+                        }
+                        else{
+                            alert(data.payload.data.message)
+                        }
                         break;
                     case 'configured':
                         console.log('the Auth module is configured');
@@ -60,7 +66,7 @@ function CorpSignin(){
             updateUser(user)
             console.log('user:', user)
             console.log("email:", user.attributes.email)
-            // updateUser(user)
+            updateUser(user)
             updateFormState(()=>({...formState, formType:"signedIn" }))
         }catch(err){
 
@@ -76,7 +82,7 @@ function CorpSignin(){
 
     async function signIn(){
         const {email, password} = formState
-        await Auth.signIn({email, password})
+        await Auth.signIn(email, password)
         updateFormState(()=>({...formState, formType:"signedIn" }))
     }
         return(
@@ -128,12 +134,12 @@ function CorpSignin(){
                 </div>
                 <div id="middle1" class ="col-6"> 
                 <button onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))}  class="button buttons">DASHBOARD</button>          
-                <button id="butn3" class="button buttons">GENERATE REPORT</button>
+                <button id="butn3" class="bts1">GENERATE REPORT</button>
                 <button onClick={() => updateFormState(()=>({...formState, formType:'myreports'}))} id='butn3' class="button buttons">ALL REPORTS</button>
                 </div>
                 <div id="dd" class ="col-2">
                     <li class="dropdown">
-                    <a id='uname' href="javascript:void(0)" class="dropbtn"><IoMdContact/>{' '} {user.attributes.name}</a>
+                    <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
                     <div  class="dropdown-content">
                             <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                             <div class="dropdown-divider"></div>
@@ -158,12 +164,12 @@ function CorpSignin(){
                                     </div>
                                     <div id="middle1" class ="col-6">  
                                     <button onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))}  class="button buttons">DASHBOARD</button>         
-                                    <button id="butn3" class="button buttons">GENERATE REPORT</button>
-                                    <button onClick={() => updateFormState(()=>({...formState, formType:'generateReport'}))} id='butn3' class="button buttons">ALL REPORTS</button>
+                                    <button onClick={() => updateFormState(()=>({...formState, formType:'generateReport'}))} id='butn3' class="button buttons">GENERATE REPORT</button>
+                                    <button id='butn3' class="bts1">ALL REPORTS</button>
                                     </div>
                                     <div id="dd" class ="col-2">
                                         <li class="dropdown">
-                                        <a id='uname' href="javascript:void(0)" class="dropbtn"><IoMdContact/>{' '} {user.attributes.name}</a>
+                                        <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
                                         <div  class="dropdown-content">
                                                 <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                                                 <div class="dropdown-divider"></div>
@@ -192,13 +198,13 @@ function CorpSignin(){
                                     <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40"></img>
                                     </div>
                                     <div id="middle1" class ="col-6">  
-                                    <button class="button buttons">DASHBOARD</button>         
+                                    <button class="bts1">DASHBOARD</button>         
                                     <button onClick={() => updateFormState(()=>({...formState, formType:'generateReport'}))} id="butn3" class="button buttons">GENERATE REPORT</button>
                                     <button onClick={() => updateFormState(()=>({...formState, formType:'myreports'}))} id='butn3' class="button buttons">ALL REPORTS</button>
                                     </div>
                                     <div id="dd" class ="col-2">
                                         <li class="dropdown">
-                                        <a id='uname' class="dropbtn"><IoMdContact/>{' '} {user.attributes.name}</a>
+                                        <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
                                         <div  class="dropdown-content">
                                                 <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                                                 <div class="dropdown-divider"></div>
@@ -233,7 +239,7 @@ function CorpSignin(){
                                     </div>
                                     <div id="dd" class ="col-2">
                                         <li class="dropdown">
-                                        <a id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</a>
+                                        <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
                                         <div  class="dropdown-content">
                                                 <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                                                 <div class="dropdown-divider"></div>
@@ -243,9 +249,9 @@ function CorpSignin(){
                                     </div>
                                 </div>
                             </div>
-                        <div className='container1'>
-                            <h1>COMPANY CODE : {user.attributes.name}</h1>
-                            <h1>USERNAME : {user.username}</h1>
+                        <div id="accCon" className='container1'>
+                            {/* <h1>COMPANY CODE : {user.attributes.name}</h1> */}
+                            <h1>USERNAME : {user.attributes.name}</h1>
                             <h1>EMAIL : {user.attributes.email}</h1>
                         </div>
                         </div>
