@@ -39,6 +39,11 @@
     font-family: Montserrat;
 }
 
+.demoForm {
+	width: 500px;
+	margin: auto;
+}
+
 .Box{
     text-align: center;
     background-color: #115542 ;

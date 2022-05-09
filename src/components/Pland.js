@@ -1,15 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from './header';
 // import {BiLock} from 'react-icons/bi';
 import "../styles/Pland.css";
 import Contact from "./Navigation/Footer";
 import {Link} from "react-router-dom";
 import glimpse from "../assets/DesignImages/FeatureGlimpse.png"
+// import {NavLink} from 'react-router-dom';
 
-
-class Pland extends React.Component{
+function Pland(){
     
-    render(){
+    const [chCount, setChCount] = useState(0);
+    const [chCount1, setChCount1] = useState(0);
+    
+    function onSubmit() {
+        
+    if (chCount===0 || chCount1===0 ){
+        alert("Please fill the field!")
+    }
+    if (chCount>0 && chCount1>0){
+        window.location.href="/components/Psignup"
+    }
+    }   
+    
     return(
             <div>
                 <Header/>
@@ -45,9 +57,9 @@ class Pland extends React.Component{
                     <h2 id="hd11">
                         Generate AUTOTRUST Report
                     </h2>
-                    <form>
-                    <input  id="iprp" placeholder="ENTER QUSBEN NUMBER" required/>
-                    <input  id="iprp" placeholder="ENTER KUBSOKA NUMBER" required/>
+                    {/* <form> */}
+                    <input  id="iprp" placeholder="ENTER QUSBEN NUMBER" onChange={(e)=> setChCount(e.target.value.length)} required/>
+                    <input  id="iprp" placeholder="ENTER KUBSOKA NUMBER" onChange={(e)=> setChCount1(e.target.value.length)} required/>
                     <ul id="rety">Report Type *</ul>
                     {/* <input type="radio"></input><label id="rt">{' '}BASIC</label><br/>
                     <input type="radio"/><label id="rt">{' '}PREMIUM</label> */}
@@ -58,9 +70,9 @@ class Pland extends React.Component{
                     <input type="radio" id="rk" name="fav_language" value="CSS" checked/>
                     <label id="rt" for="css">PREMIUM</label><br/><br/>
                     {/* <button id="grbt">Generate Report</button> */}
-                    <Link to="/components/Psignup"><button id="grbt" >Generate Report</button></Link>
+                    <button onClick={onSubmit} id="grbt" >Generate Report</button>
                     </div>
-                    </form>
+                    {/* </form> */}
 
                 </div>
             </div>
@@ -69,6 +81,5 @@ class Pland extends React.Component{
             </div>
     )
                 }
-}
 
 export default Pland;
