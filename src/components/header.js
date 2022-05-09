@@ -1,7 +1,7 @@
 import React from "react";
 // import {BiLock} from 'react-icons/bi';
 import '../styles/header.css';
-import Logo from '../assets/DesignImages/ATFullIcon2.png'
+import Logo from '../assets/DesignImages/ATFullIcon3.png'
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link, NavLink } from "react-router-dom";
 

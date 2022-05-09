@@ -72,9 +72,9 @@
     color: black;
     border: 1px;
     padding: 10px;
-    height: 290px;
+    height: 380px;
     width: 500px;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 163px;
 }
 
@@ -84,13 +84,13 @@
     color: black;
     border: 1px;
     padding: 10px;
-    height: 290px;
+    height: 380px;
     width: 500px;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 136px;
 }
 #clm{
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     margin-top: 20px;
     padding: 0;
 }
@@ -123,10 +123,10 @@ div.containernew1{
     color: black;
     border: 1px;
     /* padding: 10px; */
-    height: 90%;
-    width: 65%;
-    margin-left: 60%;
-    margin-top: 5%;
+    height:420px;
+    width: 75%;
+    margin-left: 50%;
+    margin-top: 3%;
     background-image: url('../assets/DesignImages/Dashboard_1.jpg');
     background-size:cover;  
 
@@ -143,8 +143,8 @@ div.containernew1{
     font-size: medium;
     font-family:Exo;
     float:right;
-    margin-top: 90px;
-    margin-right: -1.5%;
+    margin-top: -40px;
+    margin-right: 0.5%;
 }
 
 .block5{
@@ -153,10 +153,10 @@ div.containernew1{
     color: black;
     border: 1px;
     /* padding: 10px; */
-    height: 90%;
-    width: 70%;
-    margin-left: 60%;
-    margin-top: 5%;
+    height: 410px;
+    width: 80%;
+    margin-left: 50%;
+    margin-top: 3%;
     background-image: url('../assets/DesignImages/Dashboard_2.png');
     background-size:cover;
 }
@@ -176,7 +176,8 @@ div.containernew1{
 #hd1 {
     font-family: Exo;
     color: #0e4d3b;
-    padding: 15px;
+    padding: 20px;
+    font-size: 30px;
 }
 
 .coln {
@@ -201,8 +202,9 @@ div.containernew1{
     /* height: 50px; */
     font-size: medium;
     font-family:Exo;
-    margin-left:-120px;
-    margin-top: 45%;
+    margin-left: 10px;
+    margin-right: 50px;
+    /* margin-top: 45%; */
     /* box-shadow: 1px 1px #1e2e27; */
 }
 
@@ -215,9 +217,9 @@ div.containernew1{
     line-height: 90%;
 }
 #xx{
-    color: #be911f;
-    font-size: small;
-    font-family: Montserrat;
+    color: #947200;
+    font-size:14px;
+    font-family: Montserrat;line-height: 40px;
 }
 
 #kss{
@@ -225,10 +227,11 @@ div.containernew1{
     font-family: 'Exo';
     color: #0c0c0b;
     float: left;
-    font-size: 140%;
-    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* font-weight: 300; */
     text-align: left;
-    max-width: 65%;
+    max-width: 75%;
     
     
 }
@@ -237,11 +240,11 @@ div.containernew1{
         font-family: 'Exo';
         color: #0c0c0b;
         float: left;
-        font-size: 140%;
+        font-size: 18px;
         font-weight: 300;
         text-align: left;
         max-width: 65%;
-        margin-left: 15px;
+        margin-left: 18px;
 }
 
 #hd13{
@@ -249,7 +252,8 @@ div.containernew1{
     color: #836518;
     align-self: start;
     float: left;
-    font-weight: 300;
+    /* font-weight: 300; */
+    font-size: 34px;
 }
 
 .piccontainer{

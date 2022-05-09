@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.40a9fe90.css",
-    "main.js": "/static/js/main.df6b35d2.js",
+    "main.css": "/static/css/main.9861ae62.css",
+    "main.js": "/static/js/main.63cdf77d.js",
     "static/js/787.deeec6c3.chunk.js": "/static/js/787.deeec6c3.chunk.js",
     "static/media/car-g2d7b1eca2_1280.png": "/static/media/car-g2d7b1eca2_1280.75f078b1852449d780c5.png",
     "static/media/Picture1.png": "/static/media/Picture1.ad2126ea933b7e23acc3.png",
@@ -17,6 +17,7 @@
     "static/media/barchart.png": "/static/media/barchart.d802fc2a779ab72473ea.png",
     "static/media/support.png": "/static/media/support.2d6e431cdb315e17bdb5.png",
     "static/media/img1.png": "/static/media/img1.39ac1ca0dab6be419593.png",
+    "static/media/ATFullIcon3.png": "/static/media/ATFullIcon3.979d183026154647e8b5.png",
     "static/media/pic1.png": "/static/media/pic1.334a7e0659125a418b0e.png",
     "static/media/img2.png": "/static/media/img2.68cd05da5a2db66dcf30.png",
     "static/media/img3.png": "/static/media/img3.b2847749432c7c80ff41.png",
@@ -26,12 +27,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.40a9fe90.css.map": "/static/css/main.40a9fe90.css.map",
-    "main.df6b35d2.js.map": "/static/js/main.df6b35d2.js.map",
+    "main.9861ae62.css.map": "/static/css/main.9861ae62.css.map",
+    "main.63cdf77d.js.map": "/static/js/main.63cdf77d.js.map",
     "787.deeec6c3.chunk.js.map": "/static/js/787.deeec6c3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40a9fe90.css",
-    "static/js/main.df6b35d2.js"
+    "static/css/main.9861ae62.css",
+    "static/js/main.63cdf77d.js"
   ]
 }

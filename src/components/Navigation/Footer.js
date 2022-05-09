@@ -2,6 +2,7 @@ import React from "react";
 import '../../styles/Footer.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faInstagram, faTwitter, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 // import fcGoogle from "react-icons/fc"
 // import IoIosCall from "react-icons/io";
 // import BsFacebook from 'react-icons/bs';
@@ -11,25 +12,25 @@ export default function Contact(){
     return(
         <div className="footer">
             <div className="row">
-                <div className="col" id="foot1">
-                    <ul>Contact Us</ul>
-                    <div className="det">
-                    <ul>Call Us</ul><br/>
-                    <ul>Have us Contact u</ul><br/>
-                    <ul>Email or Drop in</ul><br/>
+                <div className="col-8" id="foot1">
+                    <ul id="fthd">Contact Us</ul>
+                    <div>
+                    <Link to="/components/customerSupport"><ul id="ftli">Call Us</ul></Link><br/>
+                    <Link to="/components/conSales"><ul id="ftli">Have us Contact u</ul></Link><br/>
+                    <Link to="/components/customerSupport"><ul id="ftli">Email or Drop in</ul></Link>
                     </div>
                 </div>
-                <div className="col" id="foot">
-                    <ul>More</ul>
-                    <div className="det">
-                    <ul>Join Us</ul><br/>
-                    <ul>The Team</ul>
+                <div className="col-2" id="foot">
+                    <ul id="fthd">More</ul>
+                    <div>
+                    <ul id="ftli">Join Us</ul><br/>
+                    <ul id="ftli">The Team</ul>
                     </div>
                 </div>
-                <div className="col" id="foot2">
-                    <h6>Find us on</h6>
+                <div className="col-2" id="foot2">
+                    <h6 id="fthd">Find us on</h6>
                     <br/>
-                    <div className="det">
+                    <div id="ftli" className="det">
                     <FontAwesomeIcon icon={faFacebook} size="2x"/>{' '}
                     <FontAwesomeIcon icon={faInstagram} size="2x"/>{' '}
                     <FontAwesomeIcon icon={faTwitter} size="2x"/>{' '}

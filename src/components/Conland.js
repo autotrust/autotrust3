@@ -21,7 +21,7 @@ export default function Conland(){
                         <img id="tts" src={sale} alt="salesimg" height={100} width="100"/>
                     <h3 id="hed">Talk to Sales</h3>
                     <p id="para1">We'll help you leverage the power of AutoTrust in the right way - with solutions
-                        specific to your business needs. Just pick up the phone and talk too a member of 
+                        specific to your business needs. Just pick up the phone and talk to a member of 
                         our Sales Team or simply drop in your details and we'll get back to you asap.
                     </p>
                     <br/>
@@ -31,11 +31,11 @@ export default function Conland(){
                     <div className="ncol1">
                         <img id="cs" src={support} alt="supportimg" height={100} width="100"/>
                     <h3 id="hed">Contact Support</h3>
-                    <p id="para2">Our help centre is always open for business. If yo can't find the answer you're
+                    <p id="para2">Our help centre is always open for business. If you can't find the answer you're
                         looking for, we're here to lend a hand.
                     </p>
                     <br/>
-                    <button id="csbt1">Customer Support</button>
+                    <Link to="/components/customerSupport"><button id="csbt1">Customer Support</button></Link>
                     </div>
                 </div>
             </div>    

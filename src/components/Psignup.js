@@ -7,7 +7,7 @@ import Header from './header';
 import PlandSi from './PlandSi';
 import car  from "../assets/DesignImages/car-g2d7b1eca2_1280.png"
 import Contact from './Navigation/Footer';
-// import {BiLock} from 'react-icons/bi';
+import {BiLock} from 'react-icons/bi';
 import {IoMdContact} from 'react-icons/io';
 import Logo from '../assets/DesignImages/ATFullIcon2.png'
 import '../styles/PlandSi.css';
@@ -161,7 +161,7 @@ function Signup() {
                                 <input  type="checkbox" onChange={onChange}/>
                                 {' '}I agree to the Terms and Privacy Policy
                                 </label>
-                                <button id="bt" onClick={signUp}>CREATE MY ACCOUNT</button>
+                                <button id="bt" onClick={signUp}><BiLock/>{' '}CREATE MY ACCOUNT</button>
                                 <button id='bt' onClick={() => updateFormState(()=>({...formState, formType:'signIn'}))}>Have an account? Sign In</button>
                             
                         </div>
@@ -261,7 +261,7 @@ function Signup() {
                     <input name='password' id='ipb' type="password" onChange={onChange} placeholder='Enter password' required/>
                     <p id="par" onClick={() => updateFormState(()=>({...formState, formType:'forgotPassword'}))} >Forgot Password?</p>
                     <label><input type="checkbox"/>{' '}Remember me on this browser</label>
-                    <button onClick={signIn} id="bt">{' '}Secure Sign In</button>
+                    <button onClick={signIn} id="bt"><BiLock/>{' '}Secure Sign In</button>
                     
                     </div>
                     <div className="col-7">
@@ -323,7 +323,7 @@ function Signup() {
                                         <div  class="dropdown-content">
                                                 <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                                                 <div class="dropdown-divider"></div>
-                                                <button id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</button>
+                                                <a id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</a>
                                         </div>
                                         </li>
                                     </div>
@@ -363,7 +363,7 @@ function Signup() {
                                         <div  class="dropdown-content">
                                                 <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                                                 <div class="dropdown-divider"></div>
-                                                <button id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</button>
+                                                <a id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</a>
                                         </div>
                                         </li>
                                     </div>

@@ -22,7 +22,7 @@
     border: 1px;
     padding: 10px;
     box-shadow: 5px 5px #1E2E27;
-    height: 192px
+    height: 227px
     ;
   }
   #ks{
@@ -35,6 +35,7 @@
     align-self: start;
     float: left;
     font-weight: 300;
+    font-size: 38px;
 
   }
   @media screen and (max-width: 600px) {

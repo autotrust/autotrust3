@@ -56,8 +56,8 @@ export default function Pland(){
                     <br/>
                     <input type="radio" id="rk" name="fav_language" value="CSS" checked/>
                     <label id="rt" for="css">PREMIUM</label><br/><br/>
-                    <button id="grbt">Generate Report</button>
-                    {/* <Link to="/components/Psignup"><button id="bt2" >Generate Report</button></Link> */}
+                    {/* <button id="grbt">Generate Report</button> */}
+                    <Link to="/components/Psignup"><button id="grbt" >Generate Report</button></Link>
                     </div>
                     </form>
 

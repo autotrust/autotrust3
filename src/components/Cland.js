@@ -35,8 +35,6 @@ export default function Cland(){
             can update every detail in the typography section of thr Style panel.</p>
                     <p id="kss">You can also ass spacing between the heading and paragragh, swap a video in for the image, or add a button. 
                     Just make sure to drop your button into the <span class="bolded">div block</span> that contains this content</p>
-                    
-
                     <button id="bt1">GET IN TOUCH</button>
                   
                     </div>
