@@ -17,7 +17,7 @@
 #foot{
     margin-top: 30px;
     text-align: center;
-    font-weight: bold;
+    /* font-weight:600; */
     font-family: 'Oswald';
     color: black;
     font-size: 14px;
@@ -29,7 +29,7 @@
 #foot1{
     margin-top: 30px;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: 'Montserrat';
     color: black;
     font-size: 14px;
@@ -39,7 +39,7 @@
 #foot2{
     margin-top: 30px;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: 'Exo';
     color: black;
     font-size: 14px;
@@ -66,7 +66,7 @@ h6{
     color: #947200;
     font-weight: 300;
     font-family: Oswald;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 #ftli:hover{
@@ -75,5 +75,5 @@ h6{
 
 #fthd{
     font-family: Exo;
-    font-size: 17px;
+    font-size: 15px;
 }

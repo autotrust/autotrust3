@@ -28,7 +28,8 @@ export default function Contact(){
                     </div>
                 </div>
                 <div className="col-2" id="foot2">
-                    <h6 id="fthd">Find us on</h6>
+                    <ul id="fthd">Find us on</ul>
+                    <br/>
                     <br/>
                     <div id="ftli" className="det">
                     <FontAwesomeIcon icon={faFacebook} size="2x"/>{' '}

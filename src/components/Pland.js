@@ -7,8 +7,9 @@ import {Link} from "react-router-dom";
 import glimpse from "../assets/DesignImages/FeatureGlimpse.png"
 
 
-export default function Pland(){
+class Pland extends React.Component{
     
+    render(){
     return(
             <div>
                 <Header/>
@@ -67,4 +68,7 @@ export default function Pland(){
                 <Contact/>
             </div>
     )
+                }
 }
+
+export default Pland;
