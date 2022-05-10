@@ -14,11 +14,13 @@
     margin-left: 70px;
 }
 #uname{
+    width: fit-content;
     text-transform: uppercase;
     
 }
 #usdd{
     /* width: 50px; */
+    width: fit-content;
     cursor: pointer;
 }
 #butn2{

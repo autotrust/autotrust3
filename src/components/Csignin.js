@@ -5,7 +5,7 @@ import Contact from '../components/Navigation/Footer';
 import {BiLock} from 'react-icons/bi';
 import {Auth, Hub} from 'aws-amplify';
 import {IoMdContact} from 'react-icons/io';
-import Logo from '../assets/DesignImages/ATFullIcon2.png';
+import Logo from '../assets/DesignImages/ATFullIcon3.png';
 import {Link} from 'react-router-dom';
 import PlandSi from './PlandSi';
 
@@ -143,7 +143,7 @@ function CorpSignin(){
                     <div  class="dropdown-content">
                             <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                             <div class="dropdown-divider"></div>
-                            <button id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</button>
+                            <a id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</a>
                     </div>
                     </li>
                 </div>
@@ -173,7 +173,7 @@ function CorpSignin(){
                                         <div  class="dropdown-content">
                                                 <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                                                 <div class="dropdown-divider"></div>
-                                                <button id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</button>
+                                                <a id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</a>
                                         </div>
                                         </li>
                                     </div>
@@ -208,7 +208,7 @@ function CorpSignin(){
                                         <div  class="dropdown-content">
                                                 <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                                                 <div class="dropdown-divider"></div>
-                                                <button id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</button>
+                                                <a id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</a>
                                         </div>
                                         </li>
                                     </div>
@@ -243,7 +243,7 @@ function CorpSignin(){
                                         <div  class="dropdown-content">
                                                 <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
                                                 <div class="dropdown-divider"></div>
-                                                <button id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</button>
+                                                <a id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</a>
                                         </div>
                                         </li>
                                     </div>

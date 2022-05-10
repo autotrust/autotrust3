@@ -9,7 +9,7 @@ import car  from "../assets/DesignImages/car-g2d7b1eca2_1280.png"
 import Contact from './Navigation/Footer';
 import {BiLock} from 'react-icons/bi';
 import {IoMdContact} from 'react-icons/io';
-import Logo from '../assets/DesignImages/ATFullIcon2.png'
+import Logo from '../assets/DesignImages/ATFullIcon3.png'
 import '../styles/PlandSi.css';
 import {Auth, Hub} from 'aws-amplify';
 // import axios from 'axios';
