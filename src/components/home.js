@@ -6,6 +6,7 @@ import Section from '../components/section';
 import Middle from '../components/middle';
 import Contact from '../components/Navigation/Footer';
 import axios from 'axios';
+import Navbar from '../components/Navbar';
  
 // import {API, graphqlOperation} from 'aws-amplify';
 // import {listVehicleDetails} from '../graphql/queries';
@@ -38,9 +39,11 @@ export default function Home(){
 
     return(
         <div>
-            <Header/>
-            <Imgslider/>
-            <Section/>
+            <Navbar />
+            {/* <Header/> */}
+            <Imgslider/> 
+            
+             <Section/>
             <Middle/>
             {/* <div>
                 {Data.map(info => {

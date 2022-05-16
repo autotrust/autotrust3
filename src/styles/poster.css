@@ -7,6 +7,11 @@
     text-align: left;
     width: 200%;
   }
+
+  #c1{
+    padding: 0px;
+  }
+  
   .carousel {
     padding: 10px 10px 0;
     border-radius: 4px;
@@ -14,44 +19,76 @@
     margin: auto;
   }
 
-  #mycarousel{
+  /* #mycarousel{
     width: 100%;
-  }
+  } */
   
-
-.carousel-inner {
+.carousel-item1{
+  height: 100px;
+}
+/* .carousel-inner {
     position: relative;
     width: 110%;
     overflow: hidden;
-}
-  .carousel__main {
+} */
+  /* .carousel__main {
     border-radius: 4px;
     height: 150px;
-  }
-  #pics{
+  } */
+  /* #pics{
     height: 100px;
     width: 150px
-  }
+  } */
   @media only screen and (max-width:500px){
 
-    #fp,#sp,#myCarousel{
+    #sp,#myCarousel{
       float: none;
-      width: auto;
+      /* width: 50%; */
       height: auto;
+      /* margin-left: -120px; */
+    }
+
+    #fp{
+      /* margin-left: -140px; */
+      
     }
     .container-slider{
       float: none;
       width: 100%;
     }
 
-    .col {
+    .col-2, .col-8 {
       width: 100%;
       display: block;
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
     }
+
+    
 
   }
 
+  #c1pic{
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  #c2pic{
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  #pr1, #pr2{
+    margin-left: 10px;
+  }
+
+  #pr2, #pr3{
+    margin-top: 0px;
+  }
+
+  #pr3{
+
+  }
+  
       #spar {
         color:white;
         font-family: Oswald;
@@ -59,16 +96,40 @@
         height:45px;
       }
 
+      #spar1 {
+        color:white;
+        font-family: Oswald;
+        font-size: 15px;
+        margin-top: 10px;
+        height: 20px;
+      }
+
 #rr{
   background-color: #1e2e27;
   margin-top: 20px;
 }
+#rr1{
+  height: 80px;
+}
+.colm1, .colm2, .colm3{
+  float: left;
+  width: 33%;
+  padding: 10px;
+  height: 120px;
+}
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 #slr{
   width: 100%;
   margin-left: 60px
 }
-
+#slr1{
+  /* width: 70%; */
+}
 .carousel.img{
   width:10%;
 }
@@ -89,7 +150,7 @@ a.carousel-control-next{
 }
 
 #co{
-  margin-top: 20px;
+  /* margin-top: 135px; */
   
 }
 
@@ -130,8 +191,12 @@ a.carousel-control-next{
   text-align: left;
 }
 
-#txt2{
+#txt2, #txt3{
   margin-top: 6%;
   margin-left: 5%;
   text-align: left;
+}
+
+#txt3{
+  margin-left: 0px;
 }

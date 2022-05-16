@@ -6,11 +6,12 @@ import sale from "../assets/DesignImages/Sales.png";
 import support from "../assets/DesignImages/support.png";
 import "../styles/Conland.css";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 export default function Conland(){
 
     return(
         <div>
-        <Header/>
+        <Navbar/>
         <div className="container6">
             <img id="abcd" src={bgi} alt="image" height={200} width="900"/>    
         </div>

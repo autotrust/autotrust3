@@ -44,14 +44,38 @@
       display: block;
       margin-bottom: 20px;
     }
+
+    #m{
+      /* font-size: ; */
+    }
+
+    #hd{
+      font-size: 35px;
+    }
+
+    #ks{
+      font-size: 17px;
+    }
+
+    .card{
+      height: 250px;
+      padding: 15px;
+    }
+  }
+
+  @media screen and (max-height: 750px) {
+    .card{
+      height: 280px;
+    }
   }
 
   #m{
-    font-size: calc(0.05rem + 0.8vw);
+    font-size: 15px;
     font-family: 'Montserrat';
-    margin-left: 610px;
+    /* margin-left: 610px; */
     margin-top: -22px;
     color: #be911f;
     font-weight: 600;
+    text-align: center;
 
   }

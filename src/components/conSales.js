@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Header from "../components/header";
 import Contact from "../components/Navigation/Footer";
+import Navbar from './Navbar';
 import bgi from "../assets/DesignImages/ContactPageImg_Green.png";
 function ConSales(){
 
@@ -39,7 +40,7 @@ function ConSales(){
 
     return (
         <div>
-            <Header/>
+            <Navbar/>
         <div className="container6">
             <img id="abcd" src={bgi} alt="image" height={200} width="900"/>    
         </div>

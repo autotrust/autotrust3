@@ -17,4 +17,10 @@
     color: #be911f;
     font-weight: 600;
 
-  }
+}
+
+@media screen and (max-width: 600px) {
+    .container1{
+        /* height: 170px; */
+    }
+}

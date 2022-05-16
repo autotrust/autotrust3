@@ -4,11 +4,12 @@ import Contact from "../components/Navigation/Footer";
 import bgi from "../assets/DesignImages/ContactPageImg_Green.png";
 import {BiPhoneCall} from 'react-icons/bi';
 import {SiGmail} from 'react-icons/si';
+import Navbar from './Navbar';
 
 function CustomerSupport(){
     return(
         <div>
-            <Header/>
+            <Navbar/>
             <div className="container6">
                 <img id="abcd" src={bgi} alt="image" height={200} width="900"/>    
             </div>

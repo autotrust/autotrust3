@@ -5,6 +5,7 @@ import "../styles/Pland.css";
 import Contact from "./Navigation/Footer";
 import {Link} from "react-router-dom";
 import glimpse from "../assets/DesignImages/FeatureGlimpse.png"
+import Navbar from "./Navbar";
 // import {NavLink} from 'react-router-dom';
 
 function Pland(){
@@ -24,7 +25,7 @@ function Pland(){
     
     return(
             <div>
-                <Header/>
+                <Navbar/>
                 <div className="container2">
                     <div className="row">
                         <div id="Pl" className="col-7">

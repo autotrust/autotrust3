@@ -12,6 +12,7 @@ import {IoMdContact} from 'react-icons/io';
 import Logo from '../assets/DesignImages/ATFullIcon3.png'
 import '../styles/PlandSi.css';
 import {Auth, Hub} from 'aws-amplify';
+import Navbar from '../components/Navbar';
 // import axios from 'axios';
 
 const initialFormState = {
@@ -139,7 +140,7 @@ function Signup() {
                    formType==='signUp' && (
                        
                     <div className='row'>
-                        <Header/>
+                        <Navbar/>
                     <div id="k" className="col-4">
                     <h3>Sign Up</h3>
                         <div id="bd">
@@ -181,7 +182,7 @@ function Signup() {
                 {
                     formType==='confirmSignUp' && (
                         <div className='row'>
-                            <Header/>
+                            <Navbar/>
                         <div id='cnfsp' className="col-4">
                         <h3>Verification</h3>
                         <input id='ipb' name='authCode' onChange={onChange} placeholder='Confirmation Code'/>
@@ -203,7 +204,7 @@ function Signup() {
                 {
                     formType ==="forgotPassword"&&(
                         <div className='row'>
-                            <Header/>
+                            <Navbar/>
                             <div id="k" className="col-4">
                                 <h3>Forgot Password</h3>
                                 <input id='ipb' onChange={onChange} name="email" type="email" placeholder='Enter your registered email ID'></input>
@@ -225,7 +226,7 @@ function Signup() {
                 {
                     formType==='forgotPasswordSubmit'&&(
                         <div className='row'>
-                            <Header/>
+                            <Navbar/>
                             <div id="k" className="col-4">
                                 <h3>Forgot Password</h3>
                                 <input id='ipb' onChange={onChange} name="email" type="email" placeholder='Enter your email Id'></input>
@@ -248,7 +249,7 @@ function Signup() {
                 {
                     formType==='signIn' &&(
                     <div className='row'>
-                        <Header/>
+                        <Navbar/>
                     <div id="k" className="col-4">
                     <h3 >Sign In</h3>
                     
@@ -282,7 +283,7 @@ function Signup() {
                             <div class="container-fluid">
             <div class="row">
                 <div class="col-3">
-                <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40"></img>
+                <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" width="650"></img>
                 </div>
                 <div id="middle1" class ="col-6">           
                 <button class="bts1">GENERATE REPORT</button>
@@ -311,7 +312,7 @@ function Signup() {
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-3">
-                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40"></img>
+                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" width="650"></img>
                                     </div>
                                     <div id="middle1" class ="col-6">           
                                     <button onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} class="button buttons">GENERATE REPORT</button>
@@ -350,7 +351,7 @@ function Signup() {
                         <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-3">
-                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40"></img>
+                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" width="650"></img>
                                     </div>
                                     <div id="middle1" class ="col-6">  
                                     {/* <button onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} class="button buttons">DASHBOARD</button>          */}

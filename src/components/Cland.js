@@ -7,11 +7,12 @@ import img1 from '../assets/DesignImages/img1.png';
 import img2 from '../assets/DesignImages/img2.png';
 import img3 from '../assets/DesignImages/img3.png';
 import Contact from "./Navigation/Footer";
+import Navbar from "./Navbar";
 import cpic from '../assets/DesignImages/carpic.png';
 export default function Cland(){
     return(
         <div>
-        <Header/>
+        <Navbar/>
         <div className="container3">
             <div className="c1">
             

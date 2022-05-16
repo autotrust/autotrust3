@@ -4,6 +4,7 @@ export default function Middle(){
     return(
         <div className="container-fluid" id="a">
             <div className="row">
+            
             <h1 id="m">THE UNIQUE FEATURE SET</h1>
 
                 <div className="col">

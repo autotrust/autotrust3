@@ -7,8 +7,8 @@
 }
 
 .logo{
-  margin-top: 5px;
-  margin-left: 4%;
+  margin-top: -6px;
+  margin-left: -60%;
 }
 
 @media only screen and (max-width:500px){
@@ -47,7 +47,7 @@ margin-top: 6px;
 text-decoration: none;
 font-family: Montserrat;
 letter-spacing: 1px;
-min-width: 180px;
+min-width: 161px;
 font-size: 14px;
 height: 40px;
 }
@@ -63,8 +63,8 @@ display: inline-block;
 .dropdown-content {
 display: none;
 position: absolute;
-background-color: #f9f9f9;
-min-width: 180px;
+background-color: white;
+min-width: 50px;
 box-shadow: 0px 8px 16px 0px rgba(238, 235, 235, 0.2);
 z-index: 1;
 /* font-size: medium; */
@@ -73,7 +73,7 @@ text-decoration: dotted;
 
 .dropdown-content a {
 color: #947200;
-/* padding: 12px 16px; */
+padding: 12px 16px;
 text-decoration: dotted;
 display: block;
 text-align: left;
@@ -81,6 +81,7 @@ font-family: 'Exo';
 background-color: white;
 font-weight: 600;
 font-size: 16px;
+position: relative;
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1;}
@@ -177,7 +178,7 @@ ul a{
   text-decoration: dotted;
   /* background-color: #000; */
   color: #fff;
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
   /* padding: 10px 20px; */
   /* font-weight: bold; */
 }
@@ -204,4 +205,11 @@ ul a:hover{
   font-weight: 600;
   background-color:transparent;
   justify-content: space-around;
+}
+
+
+#headNo{
+  writing-mode: vertical-rl;
+  background-color: yellow;
+  inline-size: 310px;
 }
