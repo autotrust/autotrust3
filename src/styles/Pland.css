@@ -141,3 +141,56 @@
     padding:30px;
     width:100%
 }
+
+@media only screen and (max-width:700px) {
+
+    #pimg{
+        height:100px;
+        width:fit-content;
+        margin-left: 0px;
+    }
+
+    #ac{
+        height: auto;
+        width:25%;
+        margin-left:60px;
+    }
+
+    #f{
+        font-size: 9px;
+    }
+
+    #tt{
+        font-size: 6px;
+    }
+
+    #lbt{
+        height:auto;
+        font-size: 10px;
+        width: auto;
+    }
+
+    .Box{
+        width: auto;
+        margin-left: 0px;
+    }
+
+    #hd11{
+        font-size: 20px;
+    }
+
+    #iprp{
+        padding: 10px 15px;
+    }
+
+    #rety{
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    #grbt{
+        width: auto;
+        height: auto;
+    }
+    
+}

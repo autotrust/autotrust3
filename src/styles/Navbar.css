@@ -29,6 +29,7 @@ nav {
     border: none;
 }
 
+
 #nav1{
     color: #947200;
     font-weight: 600;
@@ -43,7 +44,7 @@ nav {
     display: none;
     position: absolute;
     right: 10px;
-    top: 20px;
+    top: 30px;
     padding: 5px;
     color:white;
     font-size: 18px;
@@ -53,11 +54,13 @@ nav {
     .list {
         flex-direction: column;
         height: auto;
+        padding: 0px;
+        margin-right: 35px;
     }
-    .items:nth-child(1){
+    /* .items:nth-child(1){
         border-top: 1px solid rgba(255, 255, 255, 0.555);
         margin-top: 50px;
-    }
+    } */
     .items {
         width: 100%;
         /* border-top: 1px solid rgba(255, 255, 255, 0.555); */
@@ -67,5 +70,16 @@ nav {
     }
     .btn {
         display: block;
+        width:auto;
     }
+
+    #lg{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    #rpnav{
+        margin-top: 30px;
+    }
+
 }

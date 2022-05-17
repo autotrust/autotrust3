@@ -29,10 +29,15 @@ export default function Navbar() {
 
     return(
         <div className='container-fluid'>
-      
+          <div className='row'>
+            <div className='col-2'>
+          <Link to ="/"> <img className="logo" src={Logo} id='lg' height="40"></img></Link>
+          </div>
+          <div id='rpnav' className='col-10'>
         {(toggleMenu || screenWidth > 500) && (
+          
         <ul className="list">
-            <Link to ="/"> <img className="logo" src={Logo} id='lg' height="35"></img></Link>
+            
         <li className="items"><NavLink id='nav' to='/components/Pland' >PERSONAL</NavLink></li>
         <li className="items"><NavLink id='nav' to='/components/Cland'>CORPORATE</NavLink></li>
         <li className="items"><NavLink id='nav' to='#'>GOVERNMENT</NavLink></li>
@@ -49,8 +54,9 @@ export default function Navbar() {
         </li>
         </ul>
         )}
-    <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
-      
-      </div>
-    )
+        </div>
+        <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
+        </div>
+          </div>
+        )
         }

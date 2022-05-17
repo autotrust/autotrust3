@@ -48,7 +48,7 @@ export default function Cland(){
         <div className="container3">
             <div className="row">
             <div className="ch1">
-            <img src={cpic} alt="car-image" height="200" width="200"/>
+            <img src={cpic} id="clandcar" alt="car-image" height="200" width="200"/>
             </div>
             <div className="cnew">   
         <p>You can also add spacing between the heading and paragragh, swap a video in for
@@ -61,10 +61,10 @@ export default function Cland(){
 
         <div className="containernew1">
             <div className="row">
-            <div className="col">
+            <div id="cland4con" className="col">
                 <div className="block3">
                 <div id="clandcont" className='coln'>
-                <h2 id="hd1">A cuwmslwicvedd Ujkeuf on jwqkxy cischy</h2>
+                <h2 id="hd1">A cuwmslwicvedd Ujkeuf on jwqkxy</h2>
 
                    <div className="ksss">
                        <p>JIK
@@ -82,7 +82,7 @@ export default function Cland(){
                     </div>
                     
                     <div id="chart" className="col-5">
-                <img src={kpic1} alt="image" width="400" height="250"/>
+                <img src={kpic1} id="anlypic" alt="image" width="400" height="250"/>
                     </div>
                     </div>
                     </div>
@@ -99,7 +99,7 @@ export default function Cland(){
                 </p>
             </div>
             <div className="ch">
-                <img src={barchart} alt="car-image" height="200" width="200" />
+                <img id="barpic" src={barchart} alt="car-image" height="200" width="200" />
             </div>
             </div>
         </div>
@@ -113,7 +113,7 @@ export default function Cland(){
             </div>
             <div className='colmn'>
                 <div className="nblock">
-                <h1 id="hd13">Ujwwbjauxi Liwhqand</h1>
+                <h1 id="hd13">Ujwwbjaux Liwhqand</h1>
                     <p id="kss">The <span class="bolded">feature</span> layout is built with <span class="bolded">flex</span>, like the <span class="bolded">hero</span> layout. Don't like our typsetting? You
             can update every detail in the typography section of thr Style panel.</p>
                     <p id="kss">You can also ass spacing between the heading and paragragh, swap a video in for the image, or add a button. 
@@ -126,13 +126,13 @@ export default function Cland(){
         </div>
         <div className="piccontainer">
             <div className="row">
-                <div className="col">
+                <div id="cland5con" className="col">
                     <img id="ba" src={img3} alt="phone" height="100" width="100"/>
                 </div>
-                <div className="col">
+                <div id="cland5con" className="col">
                     <img id="dc" src={img1} alt="phone" height="100" width="100"/>
                 </div>
-                <div className="col">
+                <div id="cland5con" className="col">
                     <img id="da" src={img2} alt="phone" height="100" width="100"/>
                 </div>
             </div>
