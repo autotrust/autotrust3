@@ -18,7 +18,7 @@
 #tts{
     height: 100px;
     width: 100px;
-    margin-top: -50px;
+    margin-top: -35px;
     margin-left: 0%;
 
 }
@@ -27,7 +27,7 @@
     height: 100px;
     width: 100px;
     margin-left: 0%;
-    margin-top: -50px;
+    margin-top: -35px;
 }
 
 .ncol,.ncol1 {
@@ -156,4 +156,53 @@
     margin-bottom: 20px;
     color: #0a382b;
     font-size: 30px;
+}
+
+@media screen and (max-width:600px){
+    #tts,#cs{
+        margin-top: -5px;
+        height: 30px;
+        width: 30px;
+    }
+    #hed{
+        font-size: 10px;
+    }
+    #para1,#para2{
+        font-size: 7px;
+        line-height: 12px;
+        padding-right: 5px;
+    }
+    .container5{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #csbt{
+        margin-top: 0px;
+        width: fit-content;
+        height: auto;
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+    #csbt1{
+        margin-top: 36px;
+        width: fit-content;
+        height: auto;
+        font-size: 10px;
+        /* margin-bottom: 10px; */
+    }
+    .ncol,.ncol1{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-height:860px){
+    #csbt1{
+        margin-top: 24px;
+    }
+}
+
+@media screen and (min-height:667px){
+    #csbt1{
+        margin-top: 36px;
+    }
 }
