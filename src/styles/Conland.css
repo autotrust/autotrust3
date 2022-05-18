@@ -14,6 +14,32 @@
     margin-bottom: 3%;
 }
 
+#ipb1{
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid rgb(247, 243, 243);
+    border-radius: 8px;
+    font-family: Montserrat;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 4px rgb(0 0 0 / 6%);
+}
+
+#bt6{
+    color: #fff;
+    background-color: #0a382b;
+    width: 140px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    height: 50px;
+    font-size: 17px;
+    font-family: Exo;
+    margin-bottom: 5px
+}
+
 #tts{
     height: 100px;
     width: 100px;
@@ -89,7 +115,7 @@
     width: 50%;
 }
 
-#k4r{
+#k4r, #r4k{
     margin-left: 500px;
     margin-top: 50px;
     font-family: Exo;
@@ -154,6 +180,9 @@
     font-size: 30px;
 }
 
+#cusS{
+    text-align: center;
+}
 @media screen and (max-width:600px){
     #tts,#cs{
         margin-top: -5px;
@@ -186,5 +215,43 @@
     }
     .ncol,.ncol1{
         padding: 0px;
+    }
+
+    #k4r,#r4k{
+        margin-left: 0px;
+        margin-top: 8px;
+        width: fit-content;
+        padding: 15px;
+    }
+    #r4k{
+        margin-left: 80px;
+    }
+    #cus{
+        font-size: 17px;
+    }
+    #cusS{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #csup{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    #cxt{
+        font-size: 12px;
+    }
+    #ipb1, #desc{
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+
+    #bt6{
+        width: auto;
+        height: auto;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    #msg{
+        font-size: 16px;
     }
 }

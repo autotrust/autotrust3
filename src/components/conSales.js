@@ -52,15 +52,15 @@ function ConSales(){
             as soon as we can.
         </p>
         <form onSubmit={handleSubmit}>
-            <input id="ipb" type="text" value={name} placeholder="Your Name" onChange={(e) => setName(e.target.value)}/><br/>
-            <input id="ipb" type="email" value={email} placeholder="Your Email Id" onChange={(e) => setEmail(e.target.value)}/><br/>
-            <input id="ipb"  value={mobileNumber} placeholder="Your Mobile Number" onChange={(e) => setMobileNumber(e.target.value)}/><br/>
+            <input id="ipb1" type="text" value={name} placeholder="Your Name" onChange={(e) => setName(e.target.value)}/><br/>
+            <input id="ipb1" type="email" value={email} placeholder="Your Email Id" onChange={(e) => setEmail(e.target.value)}/><br/>
+            <input id="ipb1"  value={mobileNumber} placeholder="Your Mobile Number" onChange={(e) => setMobileNumber(e.target.value)}/><br/>
             {/* <input id="desc" type="text" value={description} placeholder="Description" onChange={(e) => setDescription(e.target.value)}/><br/> */}
             <textarea id="desc" value={description} name="subject" placeholder="Additional Info . . . ." onChange={(e) => setDescription(e.target.value)}></textarea>
     
-            <button id="bt5" type="submit">SUBMIT</button>
+            <button id="bt6" type="submit">SUBMIT</button>
 
-            <h3 className="message">{message ? <p>{message}</p> : null}</h3>
+            <h3 id='msg' className="message">{message ? <p>{message}</p> : null}</h3>
         </form>
         </div>
         <Contact/>
