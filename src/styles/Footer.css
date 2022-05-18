@@ -73,12 +73,9 @@ h6{
     color: black;
 }
 
-#fthd,#fthd1{
+#fthd{
     font-family: Exo;
     font-size: 15px;
-}
-#fthd1{
-    padding-left: 0px;
 }
 
 @media screen and (max-width: 500px) {
@@ -88,24 +85,9 @@ h6{
     }
     #foot1, #foot{
         width: 50%;
-        margin-top: 10px;
     }
     #foot2{
         margin-left: 1%;
         width: 100%;
-        margin-top: 10px;
-    }
-    #fthd{
-        font-size: 12px;
-    }
-    #fthd1{
-        font-size: 12px;
-        padding-left: 0px;
-    }
-    #ftli{
-        font-size: 10px;
-    }
-    #copy{
-        font-size: 10px;
     }
 }
