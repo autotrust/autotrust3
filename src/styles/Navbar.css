@@ -15,7 +15,7 @@ nav {
     align-items: center;
     position: relative;
 }
-.items, #nav, #nav1 {
+.items, #nav, #nav1,#nav2,#nav3 {
     margin-right: 20px;
     font-size: 13px;
     text-transform: uppercase;
@@ -28,7 +28,13 @@ nav {
     font-weight: 500;
     border: none;
 }
+#dpbtn{
+    margin-left: 350px;
+}
 
+#dpbtn1{
+    margin-left: 200px;
+}
 
 #nav1{
     color: #947200;
@@ -48,6 +54,19 @@ nav {
     padding: 5px;
     color:white;
     font-size: 18px;
+}
+
+#nav2{
+    margin-left: 20px;
+    margin-right: 100px;
+}
+#nav3{
+    /* margin-left: 20px; */
+    margin-right: 60px;
+}
+
+#dpct{
+    width: 161px;
 }
 
 @media screen and (max-width: 500px){
@@ -80,6 +99,17 @@ nav {
 
     #rpnav{
         margin-top: 30px;
+    }
+    #nav2,#nav3{
+        /* margin: 0px; */
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #dpct{
+        width: 161px;
+    }
+    #dpbtn,#dpbtn1{
+        margin-left: 0px;
     }
 
 }

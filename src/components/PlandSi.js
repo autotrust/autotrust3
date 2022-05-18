@@ -35,7 +35,7 @@ export default function PlandSi(){
                     
                 </div>
                 </div>
-                <div id="ks1" className="col">
+                <div id="ks2" className="col">
                         <div id="cl" class="container-lg my-3">
                         <div id="myCarousel" class="carousel slide">
                             

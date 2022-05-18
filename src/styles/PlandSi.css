@@ -68,7 +68,7 @@
     box-shadow: inset 0px 0px 4px black
 }
 #ks1{
-    height:340px;
+    /* height:340px; */
    
 }
 
@@ -186,4 +186,65 @@ input:required {
     text-align: end;
     font-family: Montserrat;
     cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    #ks1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .carousel{
+        width: 330px;
+    }
+    .Box2{
+        margin-left: 0px;
+    }
+    .Box1{
+        height: auto;
+    }
+    #next{
+        margin-top: 41%;
+    }
+    #cl{
+        margin-left: 0px;
+    }
+    #ks2{
+        margin-bottom: 10px;
+    }
+    #roh{
+        margin-left: 0px;
+    }
+    .block1{
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 50px;
+        padding: 10px;
+        height: 180px;
+        width: 210px;
+    }
+    .block2{
+        width: fit-content;
+        padding-left: 24px;
+        /* height: 180px; */
+    }
+    #hd12{
+        font-size: 20px;
+        margin-left: 0px;
+    }
+    #ks11{
+        font-size: 11px;
+        margin-left: 0px;
+    }
+    #dpdli{
+        margin-right: 50px;
+    }
+
+    #dpdli1{
+        margin-right: 70px;
+    }
+    #uname{
+        /* margin-left: -20px; */
+        width: fit-content;
+    }
 }

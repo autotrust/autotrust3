@@ -23,6 +23,9 @@
     width: fit-content;
     cursor: pointer;
 }
+#verf{
+    font-family: Montserrat;
+}
 #butn2{
     margin-left: 150px;
 }
@@ -34,3 +37,18 @@
     font-family: MONTSERRAT;
     font-size: small;
     }
+
+@media screen and (max-width:600px){
+    #cnfsp{
+        margin-top: 20px;
+        margin-left: 0px;
+        width: 100%;
+        font-size: 20px;
+        padding-left:25% ;
+        padding-right: 25%;
+    }
+    #verf{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,9 +1,6 @@
 import React, {useState, useEffect} from 'react';
-// import Home from './home';
 import { Navigate } from 'react-router-dom';
 import "../styles/psignup.css";
-// import { Link } from 'react-router-dom';
-import Header from './header';
 import PlandSi from './PlandSi';
 import car  from "../assets/DesignImages/car-g2d7b1eca2_1280.png"
 import Contact from './Navigation/Footer';
@@ -13,6 +10,7 @@ import Logo from '../assets/DesignImages/ATFullIcon3.png'
 import '../styles/PlandSi.css';
 import {Auth, Hub} from 'aws-amplify';
 import Navbar from '../components/Navbar';
+import {TiThMenuOutline} from 'react-icons/ti';
 // import axios from 'axios';
 
 const initialFormState = {
@@ -43,6 +41,28 @@ function Signup() {
         //     })
         // })
     }, [])
+
+    const [toggleMenu, setToggleMenu] = useState(false)
+
+    const toggleNav = () => {
+        setToggleMenu(!toggleMenu)
+      }
+  
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+
+        const changeWidth = () => {
+          setScreenWidth(window.innerWidth);
+        }
+    
+        window.addEventListener('resize', changeWidth)
+
+        return () => {
+            window.removeEventListener('resize', changeWidth)
+        }
+    
+      }, [])
 
     async function authHandler(){
         Hub.listen('auth', (data) => {
@@ -142,7 +162,7 @@ function Signup() {
                     <div className='row'>
                         <Navbar/>
                     <div id="k" className="col-4">
-                    <h3>Sign Up</h3>
+                    <h3 id='sgin'>Sign Up</h3>
                         <div id="bd">
                         <div className='col' id ="spip">
                                 <label>FIRST NAME</label>
@@ -167,7 +187,7 @@ function Signup() {
                             
                         </div>
                     </div>
-                    <div className="col-7">
+                    <div id="k2" className="col-7">
                     <img id="cp" src={car} alt="car" width="500" height="250"/>
                     <div className="cartxt">
                     <h2 id ="w">Kenyc. Ukanyds. Qjneduc</h2><br/>
@@ -184,12 +204,12 @@ function Signup() {
                         <div className='row'>
                             <Navbar/>
                         <div id='cnfsp' className="col-4">
-                        <h3>Verification</h3>
+                        <h3 id='verf'>Verification</h3>
                         <input id='ipb' name='authCode' onChange={onChange} placeholder='Confirmation Code'/>
                         <button id= 'bt' onClick={confirmSignUp}>Confirm Sign Up</button>
                         </div>
 
-                        <div className="col-7">
+                        <div id="k2" className="col-7">
                         <img id="cp" src={car} alt="car" width="500" height="250"/>
                         <div className="cartxt">
                         <h2 id ="w">Kenyc. Ukanyds. Qjneduc</h2><br/>
@@ -206,11 +226,11 @@ function Signup() {
                         <div className='row'>
                             <Navbar/>
                             <div id="k" className="col-4">
-                                <h3>Forgot Password</h3>
+                                <h3 id='sgin'>Forgot Password</h3>
                                 <input id='ipb' onChange={onChange} name="email" type="email" placeholder='Enter your registered email ID'></input>
                                 <button id='bt' onClick={forgotPassword}>Submit</button>
                             </div>
-                            <div className="col-7">
+                            <div id="k2" className="col-7">
                                 <img id="cp" src={car} alt="car" width="500" height="250"/>
                                 <div className="cartxt">
                                 <h2 id ="w">Kenyc. Ukanyds. Qjneduc</h2><br/>
@@ -228,13 +248,13 @@ function Signup() {
                         <div className='row'>
                             <Navbar/>
                             <div id="k" className="col-4">
-                                <h3>Forgot Password</h3>
+                                <h3 id='sgin'>Forgot Password</h3>
                                 <input id='ipb' onChange={onChange} name="email" type="email" placeholder='Enter your email Id'></input>
                                 <input id='ipb' name='code' onChange={onChange} placeholder='verification code'></input>
                                 <input id='ipb' name='new_password' onChange={onChange} type="password" placeholder='new password'></input>
                                 <button id='bt' onClick={forgotPasswordSubmit}>Submit</button>
                             </div>
-                            <div className="col-7">
+                            <div id="k2" className="col-7">
                                 <img id="cp" src={car} alt="car" width="500" height="250"/>
                                 <div className="cartxt">
                                 <h2 id ="w">Kenyc. Ukanyds. Qjneduc</h2><br/>
@@ -282,24 +302,31 @@ function Signup() {
                     formType==='signedIn' && (
                         <div>
                             <div class="container-fluid">
-            <div class="row">
+                <div class="row">
                 <div class="col-3">
-                <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" width="650"></img>
+                <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" id='lg'></img>
                 </div>
-                <div id="middle1" class ="col-6">           
-                <button class="bts1">GENERATE REPORT</button>
-                <button onClick={() => updateFormState(()=>({...formState, formType:'myreports'}))} id='butn2' class="button buttons">MY REPORTS</button>
+                {/* <div id="middle1" class ="col-6">*/}
+                <div id='rpnav' className='col-9'>
+                {(toggleMenu || screenWidth > 500) && (
+
+                <ul id="dpdli" className="list">
+                <li className="items"><button id='nav2' to='#'>GENERATE REPORT</button></li>
+                <li className="items"><button id='nav2' onClick={() => updateFormState(()=>({...formState, formType:'myreports'}))}>MY REPORTS</button></li>
+                
+                <li id='dpbtn' className='dropdown'>
+                <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
+                            <div id="dpct" class="dropdown-content">
+                <button class="dropdown-item" id='nav1' onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</button>
+                <div class="dropdown-divider"></div>
+                <button class="dropdown-item" id='nav1' onClick={ ()=>Auth.signOut()}>Sign Out</button>
                 </div>
-                <div id="dd" class ="col-2">
-                    <li class="dropdown">
-                    <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
-                    <div  class="dropdown-content">
-                            <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
-                            <div class="dropdown-divider"></div>
-                            <a id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</a>
-                    </div>
-                    </li>
+                </li>
+                
+                </ul>
+                )}
                 </div>
+                <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
             </div>
         </div>
                             <PlandSi/>
@@ -313,22 +340,28 @@ function Signup() {
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-3">
-                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" width="650"></img>
+                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" id='lg'></img>
                                     </div>
-                                    <div id="middle1" class ="col-6">           
-                                    <button onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} class="button buttons">GENERATE REPORT</button>
-                                    <button id='butn2' class="bts1">MY REPORTS</button>
-                                    </div>
-                                    <div id="dd" class ="col-2">
-                                        <li class="dropdown">
+                                    <div id='rpnav' className='col-9'>
+                                        {(toggleMenu || screenWidth > 500) && (
+
+                                        <ul id="dpdli" className="list">
+                                        <li className="items"><button id='nav2' onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))}>GENERATE REPORT</button></li>
+                                        <li className="items"><button id='nav2' >MY REPORTS</button></li>
+                                        
+                                        <li id='dpbtn' className='dropdown'>
                                         <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
-                                        <div  class="dropdown-content">
-                                                <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</a>
+                                                    <div id="dpct" class="dropdown-content">
+                                        <button class="dropdown-item" id='nav1' onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</button>
+                                        <div class="dropdown-divider"></div>
+                                        <button class="dropdown-item" id='nav1' onClick={ ()=>Auth.signOut()}>Sign Out</button>
                                         </div>
                                         </li>
-                                    </div>
+                                        
+                                        </ul>
+                                        )}
+                                        </div>
+                                        <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
                                 </div>
                             </div>
                             <div id="accCon" className='container1'>
@@ -351,24 +384,29 @@ function Signup() {
                         <div>
                         <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-3">
-                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" width="650"></img>
+                                <div class="col-3">
+                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" id='lg'></img>
                                     </div>
-                                    <div id="middle1" class ="col-6">  
-                                    {/* <button onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} class="button buttons">DASHBOARD</button>          */}
-                                    <button onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} id="butn3" class="button buttons">GENERATE REPORT</button>
-                                    <button onClick={() => updateFormState(()=>({...formState, formType:'myreports'}))} id='butn3' class="button buttons">ALL REPORTS</button>
-                                    </div>
-                                    <div id="dd" class ="col-2">
-                                        <li class="dropdown">
+                                <div id='rpnav' className='col-9'>
+                                        {(toggleMenu || screenWidth > 500) && (
+
+                                        <ul id="dpdli" className="list">
+                                        <li className="items"><button id='nav2' onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))}>GENERATE REPORT</button></li>
+                                        <li className="items"><button id='nav2' onClick={() => updateFormState(()=>({...formState, formType:'myreports'}))} >MY REPORTS</button></li>
+                                        
+                                        <li id='dpbtn' className='dropdown'>
                                         <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
-                                        <div  class="dropdown-content">
-                                                <a id='usdd' class="dropdown-item" onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a id='usdd' class="dropdown-item" onClick={ ()=>Auth.signOut()}>Sign Out</a>
+                                                    <div id="dpct" class="dropdown-content">
+                                        <button class="dropdown-item" id='nav1' onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</button>
+                                        <div class="dropdown-divider"></div>
+                                        <button class="dropdown-item" id='nav1' onClick={ ()=>Auth.signOut()}>Sign Out</button>
                                         </div>
                                         </li>
-                                    </div>
+                                        
+                                        </ul>
+                                        )}
+                                        </div>
+                                        <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
                                 </div>
                             </div>
                         <div id="accCon" className='container1'>

@@ -91,28 +91,38 @@ h3{
 @media screen and (max-width:600px) {
     #k{
         margin-left: 0px;
-        font-size: 9px;
-        width: 46%;
+        font-size: 12px;
+        width: 100%;
         margin-top: 17px;
-        padding-left: 10px;
+        padding-left: 25%;
+        padding-right: 25%;
+        /* margin-bottom: 26px; */
     }
     #k2{
-        width: 54%;
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    #k3 {
+        width: 100%;
+        padding-top: 16%;
+        padding-bottom: 15%;
     }
     #sgin{
-        margin-bottom: 0px;
-        font-size: 15px;
+        margin-bottom: 20px;
+        font-size: 20px;
     }
     #cp{
         margin-left: 0px;
         height: 78px;
-        width: fit-content;
+        width: 50%;
         margin-top: 25px;
         margin-bottom: 5px;
+        float: left;
     }
     .cartxt{
         padding: 10px;
-        width: fit-content;
+        width: 50%;
         height: auto;
         margin-top: 0px;
         margin-right: 0px;
@@ -121,23 +131,29 @@ h3{
     }
     #ipb{
         padding: 5px 10px;
-        font-size: 7px;
+        font-size: 10px;
         margin: 0px;
+        margin-bottom: 10px;
     }
     #bt{
         width: 100%;
         height: auto;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
         font-size: 15px;
         box-shadow: none;
+        padding: 4px;
     }
     #w{
         font-size: 13px;
     }
     #chbx{
-        margin-top: 0px;
+        margin-top: 2px;
+        margin-right: 0px;
     }
     #par{
-        font-size: 7px;
+        font-size: 9px;
+    }
+    #spip{
+        margin-bottom: 0px;
     }
 }
