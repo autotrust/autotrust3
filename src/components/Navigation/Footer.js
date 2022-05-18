@@ -28,7 +28,7 @@ export default function Contact(){
                     </div>
                 </div>
                 <div className="col-2" id="foot2">
-                    <ul id="fthd">Find us on</ul>
+                    <ul id="fthd1">Find us on</ul>
                     <br/>
                     <br/>
                     <div id="ftli" className="det">

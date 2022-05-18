@@ -79,14 +79,65 @@ h3{
     font-size: large;
 }
 
-@media screen and(max-width:500px) {
-    body{
-        max-width: 100%;
-        height: auto;
-    }
-    
-}
-
 #w{
     font-size: 190%;
+}
+
+#chbx{
+    float: left;
+    margin-right: 5px;
+}
+
+@media screen and (max-width:600px) {
+    #k{
+        margin-left: 0px;
+        font-size: 9px;
+        width: 46%;
+        margin-top: 17px;
+        padding-left: 10px;
+    }
+    #k2{
+        width: 54%;
+    }
+    #sgin{
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+    #cp{
+        margin-left: 0px;
+        height: 78px;
+        width: fit-content;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+    .cartxt{
+        padding: 10px;
+        width: fit-content;
+        height: auto;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        font-size: 7px;
+    }
+    #ipb{
+        padding: 5px 10px;
+        font-size: 7px;
+        margin: 0px;
+    }
+    #bt{
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
+        font-size: 15px;
+        box-shadow: none;
+    }
+    #w{
+        font-size: 13px;
+    }
+    #chbx{
+        margin-top: 0px;
+    }
+    #par{
+        font-size: 7px;
+    }
 }

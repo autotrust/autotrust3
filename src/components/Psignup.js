@@ -130,7 +130,7 @@ function Signup() {
             <div className='div-login'>
                    
                 {/* <div id="logo"> */}
-                    <div className="row">
+                    {/* <div className="row"> */}
                     {
                         formType==='main'&&(
                             <Navigate to='/'></Navigate>
@@ -251,7 +251,7 @@ function Signup() {
                     <div className='row'>
                         <Navbar/>
                     <div id="k" className="col-4">
-                    <h3 >Sign In</h3>
+                    <h3 id='sgin' >Sign In</h3>
                     
                     {/* <label>USERNAME</label>
                     <input id='ipb' name='username' onChange={onChange} placeholder='username'/> */}
@@ -261,11 +261,12 @@ function Signup() {
                     <label>PASSWORD</label>
                     <input name='password' id='ipb' type="password" onChange={onChange} placeholder='Enter password' required/>
                     <p id="par" onClick={() => updateFormState(()=>({...formState, formType:'forgotPassword'}))} >Forgot Password?</p>
-                    <label><input type="checkbox"/>{' '}Remember me on this browser</label>
+                    <input id='chbx' type="checkbox"/>
+                    <label>Remember me on this browser</label>
                     <button onClick={signIn} id="bt"><BiLock/>{' '}Secure Sign In</button>
                     
                     </div>
-                    <div className="col-7">
+                    <div id="k2" className="col-7">
                     <img id="cp" src={car} alt="car" width="500" height="250"/>
                     <div className="cartxt">
                     <h2 id ="w">Kenyc. Ukanyds. Qjneduc</h2><br/>
@@ -343,7 +344,7 @@ function Signup() {
                     )
                 }
                     
-                </div>
+                {/* </div> */}
                 {/* </div> */}
                 {
                     formType==="account" && (
