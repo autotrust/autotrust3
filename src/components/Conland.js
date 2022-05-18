@@ -18,6 +18,7 @@ export default function Conland(){
         <div className="container5">
             <div className="row">
                 <div className="block6">
+                <div className="row">
                     <div className="ncol">
                         <img id="tts" src={sale} alt="salesimg" height={100} width="100"/>
                     <h3 id="hed">Talk to Sales</h3>
@@ -26,7 +27,7 @@ export default function Conland(){
                         our Sales Team or simply drop in your details and we'll get back to you asap.
                     </p>
                     <br/>
-                    <Link to="/components/conSales"><button id="csbt">Contact Sales</button></Link>
+                    
                     {/* <a id="csbt" href="/components/conSales">Contact Sales</a> */}
                     </div>
                     <div className="ncol1">
@@ -36,9 +37,19 @@ export default function Conland(){
                         looking for, we're here to lend a hand.
                     </p>
                     <br/>
+                    
+                    </div>
+                    </div>
+                    <div id="nrow" className="row">
+                    <div className="lacol">
+                        <Link to="/components/conSales"><button id="csbt">Contact Sales</button></Link>
+                    </div>
+                    <div id="newline" className="lacol">
                     <Link to="/components/customerSupport"><button id="csbt1">Customer Support</button></Link>
                     </div>
                 </div>
+                </div>
+                
             </div>    
         </div>
         <Contact/>
