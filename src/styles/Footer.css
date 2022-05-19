@@ -78,6 +78,11 @@ h6{
     font-size: 15px;
 }
 
+#sicon{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
 @media screen and (max-width: 500px) {
     #foot2,#foot{
         margin-left: 0px;

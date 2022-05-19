@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Header from "../components/header";
+// import Header from "../components/header";
 import Contact from "../components/Navigation/Footer";
 import Navbar from './Navbar';
 import bgi from "../assets/DesignImages/ContactPageImg_Green.png";

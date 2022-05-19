@@ -166,7 +166,7 @@ function Signup() {
                         <div id="bd">
                         <div className='col' id ="spip">
                                 <label>FIRST NAME</label>
-                                <input name='name' id='ipb' onChange={onChange} placeholder='Enter your username'/>
+                                <input name='name' id='ipb' onChange={onChange} placeholder='Enter your first name'/>
                                 </div>
                                 <div className='col' id ="spip">
                                 <label>LAST NAME</label>

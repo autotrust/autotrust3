@@ -1,11 +1,12 @@
 import React from "react";
 import '../../styles/Footer.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebook, faInstagram, faTwitter, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-// import fcGoogle from "react-icons/fc"
-// import IoIosCall from "react-icons/io";
-// import BsFacebook from 'react-icons/bs';
+import fb from "../../assets/DesignImages/facebook.png";
+import insta from "../../assets/DesignImages/Instagram.png";
+import twitter from "../../assets/DesignImages/Twitter.png";
+import linkedin from "../../assets/DesignImages/Linkedin.png";
+
 const date = new Date();
 const dateyear = date.getFullYear();
 export default function Contact(){
@@ -32,10 +33,14 @@ export default function Contact(){
                     <br/>
                     <br/>
                     <div id="ftli" className="det">
-                    <FontAwesomeIcon icon={faFacebook} size="2x"/>{' '}
+                    <img id="sicon" src={fb} alt="fb" width="35" height="35"/>
+                    <img id="sicon" src={insta} alt="fb" width="35" height="35"/>
+                    <img id="sicon" src={twitter} alt="fb" width="35" height="35"/>
+                    <img id="sicon" src={linkedin} alt="fb" width="35" height="35"/>
+                    {/* <FontAwesomeIcon icon={faFacebook} size="2x"/>{' '}
                     <FontAwesomeIcon icon={faInstagram} size="2x"/>{' '}
                     <FontAwesomeIcon icon={faTwitter} size="2x"/>{' '}
-                    <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+                    <FontAwesomeIcon icon={faLinkedin} size="2x"/> */}
                     </div>
                 </div>
             </div>
