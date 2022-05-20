@@ -85,9 +85,7 @@ function Signup() {
                     if(data.payload.data.message==="Custom auth lambda trigger is not configured for the user pool."){
                             alert("Password is required!")
                         }
-                    else{
-                        alert(data.payload.data.message)
-                        }
+                    alert(data.payload.data.message)
                     break;
                 case 'signUp_failure':
                         console.log('user sign up failed : ', data.payload.data.message)
@@ -311,7 +309,7 @@ function Signup() {
                 {(toggleMenu || screenWidth > 500) && (
 
                 <ul id="dpdli" className="list">
-                <li className="items"><button id='nav2' to='#'>GENERATE REPORT</button></li>
+                <li className="items"><button className='bnt1' id='nav2' to='#'>GENERATE REPORT</button></li>
                 <li className="items"><button id='nav2' onClick={() => updateFormState(()=>({...formState, formType:'myreports'}))}>MY REPORTS</button></li>
                 
                 <li id='dpbtn' className='dropdown'>
@@ -326,7 +324,7 @@ function Signup() {
                 </ul>
                 )}
                 </div>
-                <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
+                <button onClick={toggleNav} className="bnt"><TiThMenuOutline/></button>
             </div>
         </div>
                             <PlandSi/>
@@ -347,7 +345,7 @@ function Signup() {
 
                                         <ul id="dpdli" className="list">
                                         <li className="items"><button id='nav2' onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))}>GENERATE REPORT</button></li>
-                                        <li className="items"><button id='nav2' >MY REPORTS</button></li>
+                                        <li className="items"><button className='bnt1' id='nav2' >MY REPORTS</button></li>
                                         
                                         <li id='dpbtn' className='dropdown'>
                                         <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
@@ -361,7 +359,7 @@ function Signup() {
                                         </ul>
                                         )}
                                         </div>
-                                        <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
+                                        <button onClick={toggleNav} className="bnt"><TiThMenuOutline/></button>
                                 </div>
                             </div>
                             <div id="accCon" className='container1'>
@@ -406,7 +404,7 @@ function Signup() {
                                         </ul>
                                         )}
                                         </div>
-                                        <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
+                                        <button onClick={toggleNav} className="bnt"><TiThMenuOutline/></button>
                                 </div>
                             </div>
                         <div id="accCon" className='container1'>

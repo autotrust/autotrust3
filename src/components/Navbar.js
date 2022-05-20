@@ -40,7 +40,7 @@ export default function Navbar() {
             
         <li className="items"><NavLink id='nav' to='/components/Pland' >PERSONAL</NavLink></li>
         <li className="items"><NavLink id='nav' to='/components/Cland'>CORPORATE</NavLink></li>
-        <li className="items"><NavLink id='nav' to='#'>GOVERNMENT</NavLink></li>
+        <li className="items"><a id='nav' href='' >GOVERNMENT</a></li>
         <li className="items"><NavLink id='nav' to='/components/Conland'>CONTACT</NavLink></li>
         <li className='dropdown'>
         <button class="dropbtn">SECURE SIGN IN</button>
@@ -55,7 +55,7 @@ export default function Navbar() {
         </ul>
         )}
         </div>
-        <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
+        <button onClick={toggleNav} className="bnt"><TiThMenuOutline/></button>
         </div>
           </div>
         )

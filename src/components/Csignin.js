@@ -161,7 +161,7 @@ function CorpSignin(){
 
                 <ul id="dpdli1" className="list">
                 <li className="items"><button id='nav3' onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))}>DASHBOARD</button></li>
-                <li className="items"><button id='nav3'>GENERATE REPORT</button></li>
+                <li className="items"><button className='bnt1' id='nav3'>GENERATE REPORT</button></li>
                 <li className="items"><button id='nav3' onClick={() => updateFormState(()=>({...formState, formType:'myreports'}))}>MY REPORTS</button></li>
                 
                 <li id='dpbtn1' className='dropdown'>
@@ -176,7 +176,7 @@ function CorpSignin(){
                 </ul>
                 )}
                 </div>
-                <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
+                <button onClick={toggleNav} className="bnt"><TiThMenuOutline/></button>
             </div>
         </div>
                             <PlandSi/>
@@ -198,7 +198,7 @@ function CorpSignin(){
                                     <ul id="dpdli1" className="list">
                                     <li className="items"><button id='nav3' onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))}>DASHBOARD</button></li>
                                     <li className="items"><button id='nav3' onClick={() => updateFormState(()=>({...formState, formType:'generateReport'}))}>GENERATE REPORT</button></li>
-                                    <li className="items"><button id='nav3'>MY REPORTS</button></li>
+                                    <li className="items"><button className='bnt1' id='nav3'>MY REPORTS</button></li>
                                     
                                     <li id='dpbtn1' className='dropdown'>
                                     <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
@@ -212,7 +212,7 @@ function CorpSignin(){
                                     </ul>
                                     )}
                                     </div>
-                                    <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
+                                    <button onClick={toggleNav} className="bnt"><TiThMenuOutline/></button>
                                 </div>
                             </div>
                             <div className='container1'>
@@ -237,7 +237,7 @@ function CorpSignin(){
                                     {(toggleMenu || screenWidth > 500) && (
 
                                     <ul id="dpdli1" className="list">
-                                    <li className="items"><button id='nav3'>DASHBOARD</button></li>
+                                    <li className="items"><button className='bnt1' id='nav3'>DASHBOARD</button></li>
                                     <li className="items"><button id='nav3' onClick={() => updateFormState(()=>({...formState, formType:'generateReport'}))}>GENERATE REPORT</button></li>
                                     <li className="items"><button id='nav3' onClick={() => updateFormState(()=>({...formState, formType:'myreports'}))}>MY REPORTS</button></li>
                                     
@@ -253,7 +253,7 @@ function CorpSignin(){
                                     </ul>
                                     )}
                                     </div>
-                                    <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
+                                    <button onClick={toggleNav} className="bnt"><TiThMenuOutline/></button>
                                 </div>
                             </div>
                             <div className='container1'>
@@ -294,7 +294,7 @@ function CorpSignin(){
                                     </ul>
                                     )}
                                     </div>
-                                    <button onClick={toggleNav} className="btn"><TiThMenuOutline/></button>
+                                    <button onClick={toggleNav} className="bnt"><TiThMenuOutline/></button>
                                 </div>
                             </div>
                         <div id="accCon" className='container1'>

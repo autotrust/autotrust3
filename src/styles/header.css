@@ -9,6 +9,7 @@
 .logo{
   margin-top: 8px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 
@@ -42,7 +43,7 @@ border-color: white;
 box-sizing: border-box;
 border-style: groove;
 color: white;
-text-align: center;
+text-align: left;
 padding: 8px 23px;
 margin-top: 6px;
 text-decoration: none;
@@ -87,6 +88,8 @@ position: relative;
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1;}
+
+#nav1:hover{color:black;}
 
 .dropdown:hover .dropdown-content {
 display: block;

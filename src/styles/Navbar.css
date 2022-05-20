@@ -15,7 +15,7 @@ nav {
     align-items: center;
     position: relative;
 }
-.items, #nav, #nav1,#nav2,#nav3 {
+.items,#nav1,#nav2,#nav3 {
     margin-right: 20px;
     font-size: 13px;
     text-transform: uppercase;
@@ -24,6 +24,16 @@ nav {
     /* background-color: transparent; */
     background-color: transparent;
     color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    border: none;
+}
+#nav{
+    margin-right: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: transparent;
     font-family: Montserrat;
     font-weight: 500;
     border: none;
@@ -44,9 +54,9 @@ nav {
 
 #nav:hover {color: #dab85b;}
 
-.btn:hover{color: white;}
+.bnt:hover{color: white;}
 
-.btn {
+.bnt {
     display: none;
     position: absolute;
     right: 10px;
@@ -55,10 +65,17 @@ nav {
     color:white;
     font-size: 18px;
 }
+button#nav2.bnt1, button#nav3.bnt1{
+    color: #947200;
+}
+#nav2:hover{
+    color: #dab85b;
+}
 
 #nav2{
-    margin-left: 20px;
-    margin-right: 100px;
+    /* margin-left: 20px; */
+    margin-right: 20px;
+    width: 150px;
 }
 #nav3{
     /* margin-left: 20px; */
@@ -87,9 +104,11 @@ nav {
         margin-right: 0px;
         padding: 20px 0;
     }
-    .btn {
-        display: block;
-        width:auto;
+    .bnt {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        text-align: right;
     }
 
     #lg{
