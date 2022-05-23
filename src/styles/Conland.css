@@ -183,7 +183,7 @@
 #cusS{
     text-align: center;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:930px){
     #tts,#cs{
         margin-top: -5px;
         height: 30px;

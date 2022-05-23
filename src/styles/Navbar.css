@@ -87,7 +87,7 @@ button#nav2.bnt1, button#nav3.bnt1{
     width: 161px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 930px){
     .list {
         flex-direction: column;
         height: auto;

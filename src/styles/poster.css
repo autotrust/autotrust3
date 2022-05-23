@@ -39,7 +39,7 @@
     height: 100px;
     width: 150px
   } */
-  @media only screen and (max-width:500px){
+  @media only screen and (max-width:920px){
 
     #sp,#myCarousel{
       float: none;

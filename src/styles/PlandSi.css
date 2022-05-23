@@ -188,7 +188,7 @@ input:required {
     cursor: pointer;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:910px) {
     #ks1{
         width: 100%;
         margin-bottom: 10px;

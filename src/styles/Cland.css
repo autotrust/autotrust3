@@ -70,31 +70,34 @@
     text-align: center;
     background-color: white;
     color: black;
-    border: 1px;
+    /* border: 1px; */
     padding: 10px;
     height: 380px;
-    width: 500px;
-    margin-top: 10%;
-    margin-left: 163px;
+    width: 64%;
+    margin-top: 6%;
+    /* margin-left: 163px; */
 }
 
 .block{
     text-align: center;
     background-color: white;
     color: black;
-    border: 1px;
+    /* border: 1px; */
     padding: 10px;
     height: 380px;
-    width: 500px;
-    margin-top: 10%;
-    margin-left: 136px;
+    width: 64%;
+    margin-top: 6%;
+    /* margin-left: 136px; */
 }
 #clm{
-    /* margin-bottom: 40px; */
+    margin-bottom: 20px;
     margin-top: 20px;
     padding: 0;
 }
 
+#Jblk{
+    padding-left: 0px;
+}
 
 
 div.containernew1{
@@ -111,22 +114,28 @@ div.containernew1{
     color: black;
     border: 1px;
     /* padding: 10px; */
-    height: 90%;
+    height:100%;
     width: 57%;
     margin-top: 2%;
     margin-left: 21.5%;
+    
+}
+
+#cland4con{
+    margin-bottom: 4%;
 }
 
 .block4{
-    text-align: center;
+    /* text-align:left; */
+    justify-self: right;
     background-color: white;
     color: black;
     border: 1px;
-    /* padding: 10px; */
-    height:420px;
-    width: 75%;
-    margin-left: 50%;
-    margin-top: 3%;
+    /* padding-left: 300px; */
+    height:430px;
+    /* width: 75%; */
+    margin-left: 40%;
+    /* margin-top: 3%; */
     background-image: url('../assets/DesignImages/Dashboard_1.jpg');
     background-size:cover;  
 
@@ -148,29 +157,34 @@ div.containernew1{
 }
 
 .block5{
-    text-align: center;
-    background-color:white;
+    justify-self: right;
+    background-color: white;
     color: black;
     border: 1px;
-    /* padding: 10px; */
-    height: 410px;
-    width: 80%;
-    margin-left: 50%;
-    margin-top: 3%;
+    /* padding-left: 300px; */
+    height:430px;
+    /* width: 75%; */
+    margin-left: 40%;
     background-image: url('../assets/DesignImages/Dashboard_2.png');
     background-size:cover;
 }
 
 #chart{
+    width: 55%;
     float:right;
-    margin-top: -2%;
-    margin-right: 27%;
+    margin-top: 2%;
+    /* margin-right: 27%;
     margin-left: -14%;
-    margin-bottom:6%;
+    margin-bottom:6%; */
 }
 
 #clandcont{
     text-align: left;
+}
+
+div.btcon{
+    margin-top: 150px;
+    width: fit-content;
 }
 
 #hd1 {
@@ -186,7 +200,7 @@ div.containernew1{
 }
 
 #bt3{
-    width: 41%;
+    width:fit-content;
     border-radius: 5px;
     height: 50px;
     /* float:right; */
@@ -273,7 +287,12 @@ div.containernew1{
     margin-left: -55%;
 }
 
-@media screen and (max-width:600px) {
+#anlypic{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+@media screen and (max-width:930px) {
 
     .colmn{
         width: 50%;

@@ -92,7 +92,7 @@ h3{
     text-decoration: none;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:930px) {
     #k{
         margin-left: 0px;
         font-size: 12px;

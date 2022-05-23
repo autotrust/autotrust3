@@ -24,11 +24,11 @@ export default function Cland(){
         <div className="containernew">
             {/* <div className="col-4"> */}
             <div  className="row">
-                <div id="clm" className="colmn">
+                <div id="clm" className="col-6">
                 <div className="block4"></div>
             {/* <img src={kpic} alt="picture" height="400" width="400"/> */}
             </div>
-            <div className='colmn'>
+            <div id="Jblk" className='col-6'>
                 <div className="block">
                 <h1 id="hd13">Jumdye Ujekmsqkch</h1>
                 <br/>
@@ -78,10 +78,12 @@ export default function Cland(){
                     <ul>Mkudhow Qjudks</ul>
                     <ul>Juiqkzhsy</ul> */}
                     </div>
+                    <div className="btcon">
                     <Link to="/components/Csignin"><button id="bt3">GET REPORT NOW</button></Link>
                     </div>
+                    </div>
                     
-                    <div id="chart" className="col-5">
+                    <div id="chart" className="col-6">
                 <img src={kpic1} id="anlypic" alt="image" width="400" height="250"/>
                     </div>
                     </div>
@@ -107,11 +109,11 @@ export default function Cland(){
         <div className="containernew">
             {/* <div className="col-4"> */}
             <div  className="row">
-                <div id="clm" className="colmn">
+                <div id="clm" className="col-6">
                 <div className="block5"></div>
             {/* <img src={kpic2} alt="picture" height="400" width="400"/> */}
             </div>
-            <div className='colmn'>
+            <div id="Jblk" className='col-6'>
                 <div className="nblock">
                 <h1 id="hd13">Ujwwbjaux Liwhqand</h1>
                     <p id="kss">The <span class="bolded">feature</span> layout is built with <span class="bolded">flex</span>, like the <span class="bolded">hero</span> layout. Don't like our typsetting? You

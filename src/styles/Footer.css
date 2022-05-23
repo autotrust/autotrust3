@@ -95,7 +95,7 @@ h6{
       /* -webkit-transition: all .8s ease-in-out; */
     }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 930px) {
     #foot2,#foot{
         margin-left: 0px;
         margin-right: 0px;

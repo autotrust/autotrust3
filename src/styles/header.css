@@ -13,7 +13,7 @@
 }
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:930px){
 #dd,#middle{
   float: none;
   width:100%

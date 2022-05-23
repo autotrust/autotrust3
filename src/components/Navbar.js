@@ -34,7 +34,7 @@ export default function Navbar() {
           <Link to ="/"> <img className="logo" src={Logo} id='lg' height="40"></img></Link>
           </div>
           <div id='rpnav' className='col-10'>
-        {(toggleMenu || screenWidth > 500) && (
+        {(toggleMenu || screenWidth > 930) && (
           
         <ul className="list">
             
