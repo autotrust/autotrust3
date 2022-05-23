@@ -45,11 +45,11 @@ export default function Navbar() {
         <li className='dropdown'>
         <button class="dropbtn">SECURE SIGN IN</button>
                     <div class="dropdown-content">
-        <NavLink class="dropdown-item" id='nav1' to='/components/Psignup'>PERSONAL</NavLink>
+        <NavLink class="dropdown-item" id='nav1' to='/components/Psignup'>Personal</NavLink>
         <div class="dropdown-divider"></div>
-        <NavLink class="dropdown-item" id='nav1' to='/components/Csignin'>CORPORATE</NavLink>
+        <NavLink class="dropdown-item" id='nav1' to='/components/Csignin'>Corporate</NavLink>
         <div class="dropdown-divider"></div>
-        <NavLink class="dropdown-item" id='nav1' to='#'>GOVERNMENT</NavLink>
+        <NavLink class="dropdown-item" id='nav1' to='#'>Government</NavLink>
         </div>
         </li>
         </ul>

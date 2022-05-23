@@ -71,6 +71,7 @@ h6{
 
 #ftli:hover{
     color: black;
+    cursor: pointer;
 }
 
 #fthd{
@@ -81,7 +82,18 @@ h6{
 #sicon{
     margin-left: 0px;
     margin-top: 0px;
+    
 }
+
+#sicon:hover {
+    /* background-color: black; */
+    /* opacity: 0; */
+    /* mix-blend-mode:darken; */
+    cursor: pointer;
+   filter: invert(65%);
+      /* -webkit-filter: grayscale(1); */
+      /* -webkit-transition: all .8s ease-in-out; */
+    }
 
 @media screen and (max-width: 500px) {
     #foot2,#foot{

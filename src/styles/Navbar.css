@@ -50,6 +50,7 @@ nav {
     color: #947200;
     font-weight: 600;
     font-size: 13px;
+    font-family: Exo;
 }
 
 #nav:hover {color: #dab85b;}
@@ -73,7 +74,7 @@ button#nav2.bnt1, button#nav3.bnt1{
 }
 
 #nav2{
-    /* margin-left: 20px; */
+    /* pmargin-left: 20px; */
     margin-right: 20px;
     width: 150px;
 }
@@ -125,7 +126,7 @@ button#nav2.bnt1, button#nav3.bnt1{
         margin-right: 0px;
     }
     #dpct{
-        width: 161px;
+        width: 181px;
     }
     #dpbtn,#dpbtn1{
         margin-left: 0px;

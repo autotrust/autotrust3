@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import car from "../assets/DesignImages/car-g2d7b1eca2_1280.png"
 import Contact from '../components/Navigation/Footer';
 import Navbar from './Navbar';
+import {Link} from 'react-router-dom';
 import {BiLock} from 'react-icons/bi';
 import {Auth, Hub} from 'aws-amplify';
 import {IoMdContact} from 'react-icons/io';
@@ -19,6 +20,7 @@ const initialFormState = {
     // new_password:'',
     formType:'signIn'
   }
+  
 
 function CorpSignin(){
 
@@ -131,6 +133,9 @@ function CorpSignin(){
                     <input type="checkbox" onChange={this.handleChange}/>
                     {' '}Remember me on this browser</label> */}
                     <button onClick={signIn}id="bt"><BiLock/>{' '}Secure Sign In</button>
+                    <Link id='csiginiss' to="/components/consales"><p id='cxt'>Let us know if there is any issue regarding Signup or Signin, and we'll get in touch
+                        as soon as we can.
+                    </p></Link>
                     {/* </form> */}
                 {/* </div> */}
                 </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./header";
+import {Link} from 'react-router-dom';
 import '../styles/Cland.css';
 import barchart from '../assets/DesignImages/barchart.png';
 import kpic1 from '../assets/DesignImages/Dashboard_3.jpg';
@@ -36,7 +36,7 @@ export default function Cland(){
             can update every detail in the typography section of thr Style panel.</p>
                     <p id="kss">You can also ass spacing between the heading and paragragh, swap a video in for the image, or add a button. 
                     Just make sure to drop your button into the <span class="bolded">div block</span> that contains this content</p>
-                    <button id="bt1">GET IN TOUCH</button>
+                    <Link to="/components/conSales" ><button id="bt1">GET IN TOUCH</button></Link>
                   
                     </div>
 
@@ -78,7 +78,7 @@ export default function Cland(){
                     <ul>Mkudhow Qjudks</ul>
                     <ul>Juiqkzhsy</ul> */}
                     </div>
-                    <button id="bt3">GET REPORT NOW</button>
+                    <Link to="/components/Csignin"><button id="bt3">GET REPORT NOW</button></Link>
                     </div>
                     
                     <div id="chart" className="col-5">
@@ -118,7 +118,7 @@ export default function Cland(){
             can update every detail in the typography section of thr Style panel.</p>
                     <p id="kss">You can also ass spacing between the heading and paragragh, swap a video in for the image, or add a button. 
                     Just make sure to drop your button into the <span class="bolded">div block</span> that contains this content</p>
-                    <button id="bt1">GET IN TOUCH</button>
+                    <Link to="/components/conSales" ><button id="bt1">GET IN TOUCH</button></Link>
                     </div>
                     </div>
             
