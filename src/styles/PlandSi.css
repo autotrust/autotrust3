@@ -1,7 +1,6 @@
 
 .carousel-item{
     background-color: #947200;
-    /* min-height: 100%; */
     height: 335px;
     margin-top: 0px;
 
@@ -10,11 +9,13 @@
 .carousel{
     padding: 0;
 }
+
 .my-3{
     margin-top: 0rem!important;
     margin-bottom: 0rem!important;
 
 }
+
 .Box1{
     text-align: center;
     background-color: #115542 ;
@@ -22,10 +23,6 @@
     border: 1px;
     padding: 10px;
     height:315px;
-    /* width: 650px; */
-    /* margin-left: 4%; */
-
-    /* height:340px; */
 }
 
 .Box2{
@@ -37,9 +34,8 @@
     border-color: #115542;
     padding: 10px;
     margin-left: 5%;
-    /* width: 730px; */
-    /* height:340px; */
 }
+
 #rpl{
     margin-top: 1%;
     margin-bottom: 1%;
@@ -53,23 +49,14 @@
 #bt2{
     color: #fff;
     background-color:#947200;
-    /* width: 100%; */
     box-sizing: border-box;
     border-radius: 5px;
     border: none;
-    /* box-shadow: 1px 1px 1px black; */
     height: 45px;
     font-size: 19px;
     font-family:Exo;
     margin-bottom: 5px;
-
-    /* -webkit-box-shadow: inset 0 0 30px rgb(85, 85, 87);
-    -moz-box-shadow: inset 0 0 30px rgb(32, 32, 32); */
     box-shadow: inset 0px 0px 4px black
-}
-#ks1{
-    /* height:340px; */
-   
 }
 
 svg{
@@ -94,7 +81,6 @@ svg{
 
 .block1{
     text-align: center;
-    /* background-color:#be911f; */
     color: black;
     border: 1px;
     padding: 10px;
@@ -108,14 +94,12 @@ svg{
 
 .block2{
     text-align: center;
-    /* background-color: #be911f; */
     color: black;
     border: 1px;
     padding: 10px;
     height: 290px;
     width: 550px;
     margin-top: 15%;
-    
 }
 
 #roh{
@@ -226,7 +210,6 @@ input:required {
     .block2{
         width: fit-content;
         padding-left: 24px;
-        /* height: 180px; */
     }
     #hd12{
         font-size: 20px;
@@ -244,7 +227,6 @@ input:required {
         margin-right: 70px;
     }
     #uname{
-        /* margin-left: -20px; */
         width: fit-content;
     }
 }

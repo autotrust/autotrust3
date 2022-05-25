@@ -3,12 +3,11 @@
     height: 100px;
     width: 300px;
     margin-left: 40px;
-    /* font-size: large; */
 }
+
 #ac{
     height: 35px;
     margin-top: 5%;
-    /* margin-bottom: 30px; */
     width: 250px;
     margin-left: 250px;
 }
@@ -17,17 +16,16 @@
     margin-left: 50px;
     margin-top: 10px;
 }
+
 #Pl{
-    /* margin-left: 10px; */
-    /* margin-top: 10px; */
     margin-bottom: 10px;
     font-family: Exo;
     image-resolution: 100*40px;
 }
+
 #f{
     font-family: Oswald;
     font-size: 24px;
-    /* font-weight: 600; */
 }
 
 .bolded{
@@ -78,7 +76,6 @@
 
 #rk{
     margin-left: 40%;
-    /* margin-top: 4px; */
     float: left;   
 }
 
@@ -90,7 +87,6 @@
     color: #fff;
     background-color:#91701e;
     width: 65%;
-    /* box-sizing: content-box; */
     border:none;
     border-radius: 2px;
     height: 40px;
@@ -125,7 +121,6 @@
     height: 40px;
     font-size: larger;
     font-family:Exo;
-    /* margin-bottom: 40px; */
 }
 
 #rety{

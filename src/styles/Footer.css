@@ -17,41 +17,31 @@
 #foot{
     margin-top: 30px;
     text-align: center;
-    /* font-weight:600; */
     font-family: 'Oswald';
     color: black;
     font-size: 14px;
     margin-left: -400px;
     margin-right: 400px;
-    /* margin-left: 160px; */
 }
 
 #foot1{
     margin-top: 30px;
     text-align: center;
-    /* font-weight: bold; */
     font-family: 'Montserrat';
     color: black;
     font-size: 14px;
-    /* margin-right: -1000px; */
 }
 
 #foot2{
     margin-top: 30px;
     text-align: center;
-    /* font-weight: bold; */
     font-family: 'Exo';
     color: black;
     font-size: 14px;
     margin-left: -400px;
     margin-right: 400px;
-    /* margin-left: -800px; */
 }
-/* .det{
-    color: #947200;
-    font-weight: 300;
-    font-family: Oswald;
-} */
+
 #copy{
     color: black;
     font-size: 12px;
@@ -86,13 +76,8 @@ h6{
 }
 
 #sicon:hover {
-    /* background-color: black; */
-    /* opacity: 0; */
-    /* mix-blend-mode:darken; */
     cursor: pointer;
-   filter: invert(65%);
-      /* -webkit-filter: grayscale(1); */
-      /* -webkit-transition: all .8s ease-in-out; */
+    filter: invert(65%);
     }
 
 @media screen and (max-width: 930px) {

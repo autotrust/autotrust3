@@ -8,7 +8,6 @@
 }
 #ks{
     font-family:Montserrat;
-    /* font-size: large; */
 }
 
 #s{
@@ -20,7 +19,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .container1{
-        /* height: 170px; */
+    #s{
+        font-size: 18px;
     }
 }

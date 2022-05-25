@@ -8,7 +8,6 @@
     margin-left: 21.5%;
     font-family: Montserrat;
     font-size: 87%;
-
     border-left:4px solid rgb(213, 214, 213);
     margin-top: 30px;  
 }
@@ -23,7 +22,6 @@
     margin-left: 25%;
     font-family: Montserrat;
     font-size: small;
-
     border-left:4px solid rgb(213, 214, 213);
     margin-top: 60px;
     max-height: 100px;
@@ -70,24 +68,20 @@
     text-align: center;
     background-color: white;
     color: black;
-    /* border: 1px; */
     padding: 10px;
     height: 380px;
     width: 64%;
     margin-top: 6%;
-    /* margin-left: 163px; */
 }
 
 .block{
     text-align: center;
     background-color: white;
     color: black;
-    /* border: 1px; */
     padding: 10px;
     height: 380px;
     width: 64%;
     margin-top: 6%;
-    /* margin-left: 136px; */
 }
 #clm{
     margin-bottom: 20px;
@@ -113,7 +107,6 @@ div.containernew1{
     background-color: white;
     color: black;
     border: 1px;
-    /* padding: 10px; */
     height:100%;
     width: 57%;
     margin-top: 2%;
@@ -126,16 +119,12 @@ div.containernew1{
 }
 
 .block4{
-    /* text-align:left; */
     justify-self: right;
     background-color: white;
     color: black;
     border: 1px;
-    /* padding-left: 300px; */
     height:430px;
-    /* width: 75%; */
     margin-left: 40%;
-    /* margin-top: 3%; */
     background-image: url('../assets/DesignImages/Dashboard_1.jpg');
     background-size:cover;  
 
@@ -161,9 +150,7 @@ div.containernew1{
     background-color: white;
     color: black;
     border: 1px;
-    /* padding-left: 300px; */
     height:430px;
-    /* width: 75%; */
     margin-left: 40%;
     background-image: url('../assets/DesignImages/Dashboard_2.png');
     background-size:cover;
@@ -173,9 +160,6 @@ div.containernew1{
     width: 55%;
     float:right;
     margin-top: 2%;
-    /* margin-right: 27%;
-    margin-left: -14%;
-    margin-bottom:6%; */
 }
 
 #clandcont{
@@ -203,23 +187,15 @@ div.btcon{
     width:fit-content;
     border-radius: 5px;
     height: 50px;
-    /* float:right; */
-    /* margin-top: 90px;
-    margin-right: -1.5%; */
     border: none;
     box-shadow: 1px 1px 1px black;
     color: #fff;
     background-color:#be911f;
-    /* width: 100%; */
     box-sizing: border-box;
-    /* border-radius: 5px; */
-    /* height: 50px; */
     font-size: medium;
     font-family:Exo;
     margin-left: 10px;
     margin-right: 50px;
-    /* margin-top: 45%; */
-    /* box-shadow: 1px 1px #1e2e27; */
 }
 
 .list{
@@ -237,28 +213,24 @@ div.btcon{
 }
 
 #kss{
-    
     font-family: 'Exo';
     color: #0c0c0b;
     float: left;
     font-size: 16px;
     line-height: 30px;
-    /* font-weight: 300; */
     text-align: left;
     max-width: 75%;
-    
-    
 }
+
 .ksss{
-    
-        font-family: 'Exo';
-        color: #0c0c0b;
-        float: left;
-        font-size: 18px;
-        font-weight: 300;
-        text-align: left;
-        max-width: 65%;
-        margin-left: 18px;
+    font-family: 'Exo';
+    color: #0c0c0b;
+    float: left;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    max-width: 65%;
+    margin-left: 18px;
 }
 
 #hd13{
@@ -266,7 +238,6 @@ div.btcon{
     color: #836518;
     align-self: start;
     float: left;
-    /* font-weight: 300; */
     font-size: 34px;
 }
 
@@ -274,7 +245,6 @@ div.btcon{
     margin-bottom: 10px;
     margin-top: -40px;
 }
-
 
 #ba{
     margin-right: 30%;
@@ -315,7 +285,6 @@ div.btcon{
     .block4{
         height: 175px;;
         width: 175px;
-        /* margin-left: 10px; */
         margin-top: 0px;
         float: right;
     }
@@ -378,7 +347,6 @@ div.btcon{
     }
     
     .block3{
-        /* height: auto; */
         width: auto;
         margin-left: 0px;
     }
@@ -454,6 +422,5 @@ div.btcon{
         height: 80px;
         width: 50%;
         margin-right: auto;
-        /* align-items: center; */
     }
 }

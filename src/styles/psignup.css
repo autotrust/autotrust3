@@ -16,10 +16,8 @@
 #uname{
     width: 181px;
     text-transform: uppercase;
-    
 }
 #usdd{
-    /* width: 50px; */
     width: fit-content;
     cursor: pointer;
 }

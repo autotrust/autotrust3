@@ -103,8 +103,7 @@
 
 #newline{
     border-left: 2px solid rgb(12, 12, 12);
-    border-left-style: dashed;
-    
+    border-left-style: dashed; 
 }
 
 #nrow{
@@ -140,13 +139,11 @@
     background-color:#0e4d3b;
     box-sizing: border-box;
     border-radius: 2px;
-    /* height: 50px; */
     font-size: 200%;
     font-family:Montserrat;
     font-weight: 400;
     margin-bottom: -50%;
     text-decoration: none;
-    /* margin-top: 4%; */
     box-shadow: 1px 1px black;
 }
 
@@ -155,12 +152,9 @@
     margin-bottom: 0;
     font-family: Oswald;
     font-size: 25px;
-    /* height: 38px; */
-    /* width: 24px; */
 }
 
 .container5{
-    /* background-color: aliceblue; */
     margin-left: 16%;
     margin-right: 16%;
 }
@@ -183,6 +177,7 @@
 #cusS{
     text-align: center;
 }
+
 @media screen and (max-width:930px){
     #tts,#cs{
         margin-top: -5px;

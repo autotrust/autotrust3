@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/home.css';
 import Imgslider from '../components/poster'
 import Section from '../components/section';
 import Middle from '../components/middle';

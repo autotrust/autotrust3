@@ -1,4 +1,3 @@
-
   .container{
     margin-top: 30px;
     padding: 30px;
@@ -18,40 +17,18 @@
     width: 475px;
     margin: auto;
   }
-
-  /* #mycarousel{
-    width: 100%;
-  } */
   
 .carousel-item1{
   height: 100px;
 }
-/* .carousel-inner {
-    position: relative;
-    width: 110%;
-    overflow: hidden;
-} */
-  /* .carousel__main {
-    border-radius: 4px;
-    height: 150px;
-  } */
-  /* #pics{
-    height: 100px;
-    width: 150px
-  } */
+
   @media only screen and (max-width:920px){
 
     #sp,#myCarousel{
       float: none;
-      /* width: 50%; */
       height: auto;
-      /* margin-left: -120px; */
     }
 
-    #fp{
-      /* margin-left: -140px; */
-      
-    }
     .container-slider{
       float: none;
       width: 100%;
@@ -60,11 +37,12 @@
     .col-2, .col-8 {
       width: 100%;
       display: block;
-      /* margin-bottom: 20px; */
     }
+
     #pr3{
       margin-left: 140px;
     }
+
     #slr1{
       padding: 5px;
     }
@@ -89,10 +67,6 @@
     margin-top: 0px;
   }
 
-  #pr3{
-
-  }
-  
       #spar {
         color:white;
         font-family: Oswald;
@@ -127,20 +101,21 @@
   display: table;
   clear: both;
 }
+
 #slr{
   width: 100%;
   margin-left: 60px
 }
-#slr1{
-  /* width: 70%; */
-}
+
 .carousel.img{
   width:10%;
 }
+
 #pr{
   width: 70%;
   margin-top: -5px;
 }
+
 a.carousel-control-prev{
   justify-content: left;
   margin-left: 1%;
@@ -151,11 +126,6 @@ a.carousel-control-next{
   margin-right: 1%;
   height: 60px;
   margin-top: 11%;
-}
-
-#co{
-  /* margin-top: 135px; */
-  
 }
 
 #fp{
@@ -179,10 +149,9 @@ a.carousel-control-next{
   padding:0;
   float: inline-end;
   margin-left: 33%;
-  margin-top: -30px;
-  
-
+  margin-top: -30px; 
 }
+
 #txt{
   margin-top: 6%;
   text-align: left;
