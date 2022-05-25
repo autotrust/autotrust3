@@ -5,6 +5,7 @@ import Middle from '../components/middle';
 import Contact from '../components/Navigation/Footer';
 import axios from 'axios';
 import Navbar from '../components/Navbar';
+import PowerBi from './powerBi';
  
 export default function Home(){
 
@@ -23,6 +24,7 @@ export default function Home(){
             
              <Section/>
             <Middle/>
+            <PowerBi/>
             {/* <div>
                 {Data.map(info => {
                     return<div className='table'>

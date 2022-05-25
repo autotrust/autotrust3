@@ -1,7 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import '../styles/PlandSi.css';
 export default function PlandSi(){
 
+    const [chCount, setChCount] = useState(0);
+    const [chCount1, setChCount1] = useState(0);
+
+    function onSubmit(){
+        // const inputs={
+        //     'input1' : chCount,
+        //     'input2' : chCount1
+        // }
+        // console.log(inputs)
+        
+        if(chCount===0 || chCount1===0){
+            alert("Please fill the field!")
+        }
+        if(chCount>0 && chCount1>0){
+            // alert("Success")
+            window.location.href="/components/powerBi"
+        }
+    }
     return(
         <div>
             <div className="container2">
@@ -13,18 +31,18 @@ export default function PlandSi(){
                     <h2 id="hd11">
                         Generate AUTOTRUST Report
                     </h2>
-                    <form>
-                    <input  id="iprp" placeholder="ENTER QUSBEN NUMBER" required/>
-                    <input  id="iprp" placeholder="ENTER KUBSOKA NUMBER" required/>
+
+                    <input  id="iprp" placeholder="ENTER QUSBEN NUMBER" onChange={(e) => setChCount(e.target.value.length)} required/>
+                    <input  id="iprp" placeholder="ENTER KUBSOKA NUMBER" onChange={(e) => setChCount1(e.target.value.length)} required/>
                     <ul id="rety">Report Type *</ul>
                     <div className="rep">
                     <input type="radio" id="rk" name="fav_language" value="CSS"/>
                     <label id="rt" for="css">{' '}BASIC</label><br/><br/>
                     <input type="radio" id="rk" name="fav_language" value="CSS" checked/>
                     <label id="rt" for="css">PREMIUM</label><br/><br/>
-                    <button id="bt2">Generate Report</button>
+                    <button onClick={onSubmit} id="bt2">Generate Report</button>
                     </div>
-                    </form>
+                    
                     </div>
                     
                 </div>
