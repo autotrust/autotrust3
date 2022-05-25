@@ -24,7 +24,6 @@ export default function Home(){
             
              <Section/>
             <Middle/>
-            <PowerBi/>
             {/* <div>
                 {Data.map(info => {
                     return<div className='table'>
