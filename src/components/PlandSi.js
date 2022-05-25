@@ -1,13 +1,9 @@
 import React from "react";
-// import Contact from "./Navigation/Footer";
-// import Header from "./header";
 import '../styles/PlandSi.css';
-// import npic from "/AT_Snapshots/DesignImages/Feature_Image.png"
 export default function PlandSi(){
 
     return(
         <div>
-            {/* <Header/> */}
             <div className="container2">
                 <div id="rpl" className="row">
                 <div id="ks1" className="col">
@@ -21,8 +17,6 @@ export default function PlandSi(){
                     <input  id="iprp" placeholder="ENTER QUSBEN NUMBER" required/>
                     <input  id="iprp" placeholder="ENTER KUBSOKA NUMBER" required/>
                     <ul id="rety">Report Type *</ul>
-                    {/* <input type="radio"></input><label id="rt">{' '}BASIC</label><br/>
-                    <input type="radio"/><label id="rt">{' '}PREMIUM</label> */}
                     <div className="rep">
                     <input type="radio" id="rk" name="fav_language" value="CSS"/>
                     <label id="rt" for="css">{' '}BASIC</label><br/><br/>
@@ -71,12 +65,10 @@ export default function PlandSi(){
                 </div>
                 </div>
                 <div className="container4">
-            {/* <div className="col-4"> */}
             <div  className="row">
                 <div id="roh" className="colmn">
                     <div className="block1">
                         </div>
-            {/* <img id="dlm" src={npic} alt="picture" height="300" width="300"/> */}
             </div>
             <div className='colmn'>
                 <div className="block2">
@@ -90,13 +82,8 @@ export default function PlandSi(){
                     Just make sure to drop your button into the <span class="bolded">div block</span> that contains this content</p>
                     </div>
                     </div>
-            {/* </div> */}
-            {/* <div className="col-5">
-                    
-                </div> */}
                 </div>
         </div>
-            {/* <Contact/> */}
         </div>
     )
 }

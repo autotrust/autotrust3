@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-// import Header from "../components/header";
 import Contact from "../components/Navigation/Footer";
 import Navbar from './Navbar';
 import bgi from "../assets/DesignImages/ContactPageImg_Green.png";
@@ -55,7 +54,6 @@ function ConSales(){
             <input id="ipb1" type="text" value={name} placeholder="Your Name" onChange={(e) => setName(e.target.value)}/><br/>
             <input id="ipb1" type="email" value={email} placeholder="Your Email Id" onChange={(e) => setEmail(e.target.value)}/><br/>
             <input id="ipb1"  value={mobileNumber} placeholder="Your Mobile Number" onChange={(e) => setMobileNumber(e.target.value)}/><br/>
-            {/* <input id="desc" type="text" value={description} placeholder="Description" onChange={(e) => setDescription(e.target.value)}/><br/> */}
             <textarea id="desc" value={description} name="subject" placeholder="Additional Info . . . ." onChange={(e) => setDescription(e.target.value)}></textarea>
     
             <button id="bt6" type="submit">SUBMIT</button>

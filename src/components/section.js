@@ -1,6 +1,5 @@
 import React from "react";
 import '../styles/section.css'
-// import Middle from "./middle";
 export default function Section(){
     return(
         <div className="container1">

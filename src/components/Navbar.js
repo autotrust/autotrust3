@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import '../styles/Navbar.css';
+import '../styles/header.css';
 import {Link, NavLink } from 'react-router-dom';
 import Logo from '../assets/DesignImages/ATFullIcon3.png';
 import {TiThMenuOutline} from 'react-icons/ti';
@@ -34,7 +35,7 @@ export default function Navbar() {
           <Link to ="/"> <img className="logo" src={Logo} id='lg' height="40"></img></Link>
           </div>
           <div id='rpnav' className='col-10'>
-        {(toggleMenu || screenWidth > 930) && (
+        {(toggleMenu || screenWidth > 1100) && (
           
         <ul className="list">
             

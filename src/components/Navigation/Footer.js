@@ -1,6 +1,5 @@
 import React from "react";
 import '../../styles/Footer.css'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import fb from "../../assets/DesignImages/facebook.png";
 import insta from "../../assets/DesignImages/Instagram.png";
@@ -37,10 +36,6 @@ export default function Contact(){
                     <img id="sicon" src={insta} alt="fb" width="35" height="35"/>
                     <img id="sicon" src={twitter} alt="fb" width="35" height="35"/>
                     <img id="sicon" src={linkedin} alt="fb" width="35" height="35"/>
-                    {/* <FontAwesomeIcon icon={faFacebook} size="2x"/>{' '}
-                    <FontAwesomeIcon icon={faInstagram} size="2x"/>{' '}
-                    <FontAwesomeIcon icon={faTwitter} size="2x"/>{' '}
-                    <FontAwesomeIcon icon={faLinkedin} size="2x"/> */}
                     </div>
                 </div>
             </div>

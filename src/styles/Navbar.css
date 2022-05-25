@@ -51,6 +51,7 @@ nav {
     font-weight: 600;
     font-size: 13px;
     font-family: Exo;
+    text-transform: none;
 }
 
 #nav:hover {color: #dab85b;}
@@ -87,7 +88,7 @@ button#nav2.bnt1, button#nav3.bnt1{
     width: 161px;
 }
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 1100px){
     .list {
         flex-direction: column;
         height: auto;

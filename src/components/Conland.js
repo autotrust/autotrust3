@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/header";
 import Contact from "../components/Navigation/Footer";
 import bgi from "../assets/DesignImages/ContactPageImg_Green.png";
 import sale from "../assets/DesignImages/Sales.png";
@@ -27,8 +26,6 @@ export default function Conland(){
                         our Sales Team or simply drop in your details and we'll get back to you asap.
                     </p>
                     <br/>
-                    
-                    {/* <a id="csbt" href="/components/conSales">Contact Sales</a> */}
                     </div>
                     <div className="ncol1">
                         <img id="cs" src={support} alt="supportimg" height={100} width="100"/>

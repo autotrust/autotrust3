@@ -30,7 +30,6 @@ export default function Middle(){
                 <div className="col">
                     <div class='card'>
                     <h1 id="hd">AUTHENTIC
-                    {/* <br/> */}
                     </h1>
                     <br/>
                     <p id="ks">

@@ -22,11 +22,9 @@ export default function Cland(){
         </div>
         </div>
         <div className="containernew">
-            {/* <div className="col-4"> */}
             <div  className="row">
                 <div id="clm" className="col-6">
                 <div className="block4"></div>
-            {/* <img src={kpic} alt="picture" height="400" width="400"/> */}
             </div>
             <div id="Jblk" className='col-6'>
                 <div className="block">
@@ -72,11 +70,6 @@ export default function Cland(){
                            Isquaxkie <br/> Mkudhow Qjudks <br/>  Mkudhow Qjudks <br/> Juiqkzhsy
 
                        </p>
-                    {/* <ul>JIK</ul>
-                    <ul>Isquaxkie</ul>
-                    <ul>Mkudhow Qjudks</ul>
-                    <ul>Mkudhow Qjudks</ul>
-                    <ul>Juiqkzhsy</ul> */}
                     </div>
                     <div className="btcon">
                     <Link to="/components/Csignin"><button id="bt3">GET REPORT NOW</button></Link>
@@ -107,11 +100,9 @@ export default function Cland(){
         </div>
 
         <div className="containernew">
-            {/* <div className="col-4"> */}
             <div  className="row">
                 <div id="clm" className="col-6">
                 <div className="block5"></div>
-            {/* <img src={kpic2} alt="picture" height="400" width="400"/> */}
             </div>
             <div id="Jblk" className='col-6'>
                 <div className="nblock">
