@@ -1,3 +1,10 @@
+// The Personal SignIn and SignUp components of the application
+// The authentication of a user has been acheived through AWS Cognito Service.
+// Firstly we have configured aws through the terminal.
+// While adding the authorization we have created a userpool which will store the user details.
+// While creating the userpool we add added the required attributes and also have setup an identity pool.
+// We can find the userpool id, web client id, identity pool id in the aws-exports.js file located in the src folder.
+
 import React, {useState, useEffect} from 'react';
 import { Navigate } from 'react-router-dom';
 import "../styles/psignup.css";
@@ -10,9 +17,10 @@ import {IoMdContact} from 'react-icons/io';
 import Logo from '../assets/DesignImages/ATFullIcon3.png'
 import '../styles/PlandSi.css';
 import {Auth, Hub} from 'aws-amplify';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navigation/Navbar';
 import {TiThMenuOutline} from 'react-icons/ti';
 
+// At the beginning we have created a form state object and updated it whenever we changed the formType.
 const initialFormState = {
     username:'',
     password:'',
@@ -29,7 +37,9 @@ function Signup() {
     const [formState, updateFormState]= useState(initialFormState)
     const [user, updateUser] = useState(null)
     useEffect(()=>{
+        // Here we check for the currently authenticated user
         checkUser()
+        // In the autheHandler function we handle multiple cases.
         authHandler()
     }, [])
 
@@ -38,8 +48,10 @@ function Signup() {
     const toggleNav = () => {
         setToggleMenu(!toggleMenu)
       }
-  
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  // here we are using useState and declaring state variables to store the window size and set the state whenever it resizes
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)  
+
+  // we are setting up the resizing functionality inside useEffect, so that it can be performed even after the application is rendered
 
     useEffect(() => {
 
@@ -56,6 +68,10 @@ function Signup() {
       }, [])
 
     async function authHandler(){
+        //  We have used hub(inbuilt aws functionality) to share data between modules and components in our application.
+        // Here we handled multiple cases like signin, sigup, signout, signin_failure etc, and put out alerts in some cases
+        // where ever they were required.
+        // For error checking we also added console.log to have a better understanding of the issue.
         Hub.listen('auth', (data) => {
             switch (data.payload.event) {
                 case 'signIn':
@@ -87,6 +103,7 @@ function Signup() {
           });
     }
 
+    // Here we check for the currently authenticated user
     async function checkUser(){
         try{
             const user = await Auth.currentAuthenticatedUser()
@@ -98,11 +115,17 @@ function Signup() {
         }catch(err) {
         }
     }
+    // whenever there is change in the input values we are updating the state
     function onChange(e){
         e.persist()
         updateFormState(()=>({...formState, [e.target.name]: e.target.value }))
     }
     const{formType}=formState
+
+    // Here we wrote function for signup, confirmsignup, signin, forgotpassword, forgotpasswordsubmit with the required attributes
+    // Below each function has the respective inbuilt aws methods.
+    // we updated the forms in a chain process, signup->confirmsignup->signin->signedin, 
+    // forgotpassword->forgotpasswordsubmit->signedin
 
     async function signUp(){
         const {email, name, username, password} = formState
@@ -135,12 +158,14 @@ function Signup() {
 
         return (
             <div className='div-login'>
-                   
+                   {/* Here we have return each component in each formType */}
                     {
                         formType==='main'&&(
                             <Navigate to='/'></Navigate>
                         )
                     }
+
+                    {/* The Signup form type */}
                     {
                         formType==='signUp' && (
                             
@@ -165,6 +190,8 @@ function Signup() {
                                         <input  type="checkbox" onChange={onChange}/>
                                         {' '}I agree to the Terms and Privacy Policy
                                         </label>
+                                        {/* When the user clicks on the CREATE MY ACCOUNT button it will trigger the signup function.
+                                        Next the form will update to confirmsignup */}
                                         <button id="bt" onClick={signUp}><BiLock/>{' '}CREATE MY ACCOUNT</button>
                                         <button id='bt' onClick={() => updateFormState(()=>({...formState, formType:'signIn'}))}>Have an account? Sign In</button>
                                     
@@ -182,6 +209,7 @@ function Signup() {
                         )
                     }
 
+                    {/* The confirmsignup form type */}
                     {
                         formType==='confirmSignUp' && (
                             <div className='row'>
@@ -189,6 +217,8 @@ function Signup() {
                             <div id='cnfsp' className="col-4">
                             <h3 id='verf'>Verification</h3>
                             <input id='ipb' name='authCode' onChange={onChange} placeholder='Confirmation Code'/>
+                            {/* When the user clicks on the Confirm Sign Up button it will trigger the confirmsignup function.
+                                Next the form will update to signin */}
                             <button id= 'bt' onClick={confirmSignUp}>Confirm Sign Up</button>
                             </div>
 
@@ -204,6 +234,7 @@ function Signup() {
                         )
                     }
 
+                    {/* The forgotpassword formtype */}
                     {
                         formType ==="forgotPassword"&&(
                             <div className='row'>
@@ -211,6 +242,8 @@ function Signup() {
                                 <div id="k" className="col-4">
                                     <h3 id='sgin'>Forgot Password</h3>
                                     <input id='ipb' onChange={onChange} name="email" type="email" placeholder='Enter your registered email ID'></input>
+                                    {/* When the user clicks on the submit button it will trigger the forgotpassword function.
+                                        Next the form will update to forgotpasswordsubmit */}
                                     <button id='bt' onClick={forgotPassword}>Submit</button>
                                 </div>
                                 <div id="k2" className="col-7">
@@ -226,6 +259,7 @@ function Signup() {
                         )
                     }
 
+                    {/* The forgotpasswordsubmit formtype */}
                     {
                         formType==='forgotPasswordSubmit'&&(
                             <div className='row'>
@@ -235,6 +269,9 @@ function Signup() {
                                     <input id='ipb' onChange={onChange} name="email" type="email" placeholder='Enter your email Id'></input>
                                     <input id='ipb' name='code' onChange={onChange} placeholder='verification code'></input>
                                     <input id='ipb' name='new_password' onChange={onChange} type="password" placeholder='new password'></input>
+                                    {/* When the user enters the verificaion code that he/she recieved through the mail and enters a new password 
+                                        and clicks on the submit button it will trigger the forgotpasswordsubmit function. Next the form will 
+                                        update to signin */}
                                     <button id='bt' onClick={forgotPasswordSubmit}>Submit</button>
                                 </div>
                                 <div id="k2" className="col-7">
@@ -250,6 +287,7 @@ function Signup() {
                         )
                     }
 
+                    {/* The personal signin form */}
                     {
                         formType==='signIn' &&(
                         <div className='row'>
@@ -264,6 +302,8 @@ function Signup() {
                                 <p id="par" onClick={() => updateFormState(()=>({...formState, formType:'forgotPassword'}))} >Forgot Password?</p>
                                 <input id='chbx' type="checkbox"/>
                                 <label>Remember me on this browser</label>
+                                {/* When the user clicks on the Secure Sign In button it will trigger the signin function.
+                                    Next the form will update to signedin */}
                                 <button onClick={signIn} id="bt"><BiLock/>{' '}Secure Sign In</button>
                             </div>
 
@@ -279,6 +319,7 @@ function Signup() {
                         )
                     }
 
+                    {/* After user signed in fromtype */}
                     {
                         formType==='signedIn' && (
                             <div>
@@ -295,10 +336,12 @@ function Signup() {
                                             <li className="items"><button id='nav2' onClick={() => updateFormState(()=>({...formState, formType:'myreports'}))}>MY REPORTS</button></li>
                                             
                                             <li id='dpbtn' className='dropdown'>
+                                                {/* We assigned the current authenticated user to user state and called out the name attribute */}
                                             <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
                                             <div id="dpct" class="dropdown-content">
                                                 <button class="dropdown-item" id='nav1' onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</button>
                                                 <div class="dropdown-divider"></div>
+                                                {/* When the user clicks on the Sign Out button it will trigger the signout function, and redirect back to the main landing page. */}
                                                 <button class="dropdown-item" id='nav1' onClick={ ()=>Auth.signOut()}>Sign Out</button>
                                             </div>
                                             </li>
@@ -306,6 +349,9 @@ function Signup() {
                                             </ul>
                                             )}
                                         </div>
+                                        {/* This piece of code renders when the screenwidth is lessthan 1100. */}
+                                        {/* When the user clicks on the menu button the toggleNav function will be triggered. */}
+                                        {/* The css has been changed accordingly to display the navbar components when a user clicks on the menu icon. */}
                                         <button onClick={toggleNav} className="bnt"><TiThMenuOutline/></button>
                                     </div>
                                 </div>
@@ -314,6 +360,7 @@ function Signup() {
                         )
                     }
 
+                    {/* My reports form type */}
                     {
                         formType==='myreports' &&(
                             <div>
@@ -330,10 +377,12 @@ function Signup() {
                                             <li className="items"><button className='bnt1' id='nav2' >MY REPORTS</button></li>
                                             
                                             <li id='dpbtn' className='dropdown'>
+                                                {/* We assigned the current authenticated user to user state and called out the name attribute */}
                                             <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
                                                         <div id="dpct" class="dropdown-content">
                                             <button class="dropdown-item" id='nav1' onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</button>
                                             <div class="dropdown-divider"></div>
+                                            {/* When the user clicks on the Sign Out button it will trigger the signout function, and redirect back to the main landing page. */}
                                             <button class="dropdown-item" id='nav1' onClick={ ()=>Auth.signOut()}>Sign Out</button>
                                             </div>
                                             </li>
@@ -357,6 +406,7 @@ function Signup() {
                         )
                     }
                     
+                    {/* My account formtype */}
                     {
                         formType==="account" && (
                             <div>
@@ -373,10 +423,12 @@ function Signup() {
                                             <li className="items"><button id='nav2' onClick={() => updateFormState(()=>({...formState, formType:'myreports'}))} >MY REPORTS</button></li>
                                             
                                             <li id='dpbtn' className='dropdown'>
+                                                {/* We assigned the current authenticated user to user state and called out the name attribute */}
                                             <button id='uname' class="dropbtn"><IoMdContact/>{' '}{user.attributes.name}</button>
                                                         <div id="dpct" class="dropdown-content">
                                             <button class="dropdown-item" id='nav1' onClick={() => updateFormState(()=>({...formState, formType:'account'}))}>My Account</button>
                                             <div class="dropdown-divider"></div>
+                                            {/* When the user clicks on the Sign Out button it will trigger the signout function, and redirect back to the main landing page. */}
                                             <button class="dropdown-item" id='nav1' onClick={ ()=>Auth.signOut()}>Sign Out</button>
                                             </div>
                                             </li>

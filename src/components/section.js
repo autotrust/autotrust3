@@ -1,3 +1,5 @@
+// The third container in the main landing page.
+
 import React from "react";
 import '../styles/section.css'
 export default function Section(){

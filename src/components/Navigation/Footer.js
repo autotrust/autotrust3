@@ -1,3 +1,5 @@
+// The footer component of the application
+
 import React from "react";
 import '../../styles/Footer.css'
 import { Link } from "react-router-dom";
@@ -7,6 +9,7 @@ import twitter from "../../assets/DesignImages/Twitter.png";
 import linkedin from "../../assets/DesignImages/Linkedin.png";
 
 const date = new Date();
+// getFullYear is an inbuilt method in react.
 const dateyear = date.getFullYear();
 export default function Contact(){
     return(

@@ -1,7 +1,14 @@
+// The fourth container of the main landing page.
+
 import React from "react";
 import '../styles/middle.css'
+
 export default function Middle(){
+
+    {/* The container has been divided into three equal halves. */}
+    // Each half contains a card with some random text.
     return(
+
         <div className="container-fluid" id="a">
             <div className="row">
             

@@ -1,3 +1,5 @@
+// The slider component in the main landing page.
+
 import '../styles/poster.css'
 import React, {useState, useEffect} from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -13,7 +15,10 @@ import pic5 from '../assets/DesignImages/Picture5.png';
 
 export default function Imgslider(){
 
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+    // here we are using useState and declaring state variables to store the window size and set the state whenever it resizes
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)  
+
+    // we are setting up the resizing functionality inside useEffect, so that it can be performed even after the application is rendered
 
     useEffect(() => {
 
@@ -31,17 +36,19 @@ export default function Imgslider(){
 
   return(
     <>
+
+      {/* When the screen width is above 500 we are displaying the slider. */}
     {(screenWidth > 500) && (
       <div id ="co" class="container-lg">
       <div id="myCarousel" class="carousel slide">
-          
+          {/* The below ordered list will highlight the active slide's bar.*/}
           <ol class="carousel-indicators">
               <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
               <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
               <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
           </ol>
           
-          
+          {/* The below piece of code contains the inner pictures and text of the slider. */}
           <div class="carousel-inner">
               <div id='rr' class="carousel-item active">
                 <div id="slr" className='row' >
@@ -80,7 +87,7 @@ export default function Imgslider(){
               
           </div>
   
-          
+          {/* The below piece of code is all about the previous and next icons in the slider. */}
           <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
           </a>
@@ -91,6 +98,8 @@ export default function Imgslider(){
   </div>
     )}
 
+  {/* This piece of code works when the windowsize shrinks lessthan 500 basically a mobile version. */}
+  {/* In this version we are breaking down the slider and placing each conatiner one after the other. */}
   {(screenWidth < 500) && (
     <>
     <div id="c1" className='container'>

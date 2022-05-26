@@ -17,6 +17,14 @@
     font-size: 14px;
 }
 
+#db{
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 #gitbold{
     color: #0a382b;
 }

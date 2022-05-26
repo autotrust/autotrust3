@@ -1,9 +1,11 @@
+// The customer support component of the application which contains the contact details.
+
 import React from 'react';
 import Contact from "../components/Navigation/Footer";
 import bgi from "../assets/DesignImages/ContactPageImg_Green.png";
 import {BiPhoneCall} from 'react-icons/bi';
 import {SiGmail} from 'react-icons/si';
-import Navbar from './Navbar';
+import Navbar from '../components/Navigation/Navbar';
 
 function CustomerSupport(){
     return(

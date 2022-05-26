@@ -1,3 +1,6 @@
+//The contact page of the application. 
+// The Navbar and footer components have been imported and called on top and bottom of the page respectively.
+
 import React from "react";
 import Contact from "../components/Navigation/Footer";
 import bgi from "../assets/DesignImages/ContactPageImg_Green.png";
@@ -5,7 +8,9 @@ import sale from "../assets/DesignImages/Sales.png";
 import support from "../assets/DesignImages/support.png";
 import "../styles/Conland.css";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navigation/Navbar";
+
+
 export default function Conland(){
 
     return(
@@ -38,9 +43,13 @@ export default function Conland(){
                     </div>
                     </div>
                     <div id="nrow" className="row">
+                        {/* When the user clicks on the contact sales button he'll be redirected to another page where he/she
+                        can fill out a form with their concerns */}
                     <div className="lacol">
                         <Link to="/components/conSales"><button id="csbt">Contact Sales</button></Link>
                     </div>
+                    {/* When the user clicks on the customer support button he'll be redirected to another page where he/she
+                        can find company's email and contact number.*/}
                     <div id="newline" className="lacol">
                     <Link to="/components/customerSupport"><button id="csbt1">Customer Support</button></Link>
                     </div>

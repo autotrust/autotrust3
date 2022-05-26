@@ -1,3 +1,5 @@
+// The corporate landing page before a user sign in to his/her account.
+// The Navbar and footer components have been imported and called on top and bottom of the page respectively.
 import React from "react";
 import {Link} from 'react-router-dom';
 import '../styles/Cland.css';
@@ -7,12 +9,16 @@ import img1 from '../assets/DesignImages/img1.png';
 import img2 from '../assets/DesignImages/img2.png';
 import img3 from '../assets/DesignImages/img3.png';
 import Contact from "./Navigation/Footer";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navigation/Navbar";
 import cpic from '../assets/DesignImages/carpic.png';
+
+
+
 export default function Cland(){
     return(
         <div>
         <Navbar/>
+
         <div className="container3">
             <div className="c1">
             
@@ -21,6 +27,8 @@ export default function Cland(){
         
         </div>
         </div>
+
+        {/* The second container has been divided into 2 equal halves using col-6 and styled accoringly */}
         <div className="containernew">
             <div  className="row">
                 <div id="clm" className="col-6">
@@ -57,6 +65,7 @@ export default function Cland(){
         </div>
         </div>
 
+        {/* The fourth container has a block centered which contains two equal halves,one for text and other for a picture */}
         <div className="containernew1">
             <div className="row">
             <div id="cland4con" className="col">
@@ -99,6 +108,8 @@ export default function Cland(){
             </div>
         </div>
 
+
+        {/* The sixth conntainer is similar to the second container */}
         <div className="containernew">
             <div  className="row">
                 <div id="clm" className="col-6">
@@ -117,6 +128,8 @@ export default function Cland(){
             
                 </div>
         </div>
+
+        {/* The seventh container has been divided into three equal halves */}
         <div className="piccontainer">
             <div className="row">
                 <div id="cland5con" className="col">
