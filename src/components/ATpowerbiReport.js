@@ -4,7 +4,7 @@ import { PowerBIEmbed } from "powerbi-client-react";
 import PlandSi from './PlandSi';
 import '../styles/powerBi.css';
 
-const PowerBi= (props)=> {
+const ATPowerBi= (props)=> {
   const [responseConfig, setResponseConfig] = useState({});
   useEffect(() => {
     var url = "https://atfunctionapp.azurewebsites.net/api/HttpTrigger1?code=dlVHC5RiXFG6b6Q8GMxJLNfSWwgG6jx7xxzcD_6EfF_mAzFuyqbxPA=="
@@ -20,7 +20,7 @@ const PowerBi= (props)=> {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <h1>Hy ! {props.input2}</h1> */}
+        <h1>Hy ! {props.input2}</h1>
       <PowerBIEmbed
           embedConfig={{
             
@@ -70,5 +70,5 @@ const PowerBi= (props)=> {
   </div>
 );
 }
-export default PowerBi;
+export default ATPowerBi;
 

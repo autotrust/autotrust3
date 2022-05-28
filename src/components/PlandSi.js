@@ -6,6 +6,7 @@ import '../styles/PlandSi.css';
 import sli1 from '../assets/DesignImages/sli1.png';
 import sli2 from '../assets/DesignImages/sli2.png';
 import sli3 from '../assets/DesignImages/sli3.png';
+import ATPowerBi from "./ATpowerbiReport";
 
 
 export default function PlandSi(){
@@ -16,8 +17,10 @@ export default function PlandSi(){
     const [chCount1, setChCount1] = useState(0);
 
     function onSubmit(){
-        const inputs={chCount}
-        console.log("Inputs : ",inputs)
+        const input1={chCount}
+        const input2={chCount1}
+        console.log("Input1 : ",input1)
+        console.log("Input2 : ",input2)
         // checking if the input fields are empty or not
         if(chCount===0 || chCount1===0){
             alert("Please fill the field!")
@@ -25,10 +28,10 @@ export default function PlandSi(){
         if(chCount>0 && chCount1>0){
             window.open('/components/ATpowerbiReport', "_blank")
         }
-        
     }
     return(
         <div>
+            <ATPowerBi input2={chCount1}/>
             <div className="container2">
                 <div id="rpl" className="row">
                 <div id="ks1" className="col">

@@ -14,7 +14,7 @@ import {BiLock} from 'react-icons/bi';
 import {Auth, Hub} from 'aws-amplify';
 import {IoMdContact} from 'react-icons/io';
 import Logo from '../assets/DesignImages/ATFullIcon3.png';
-import dashboard from '../assets/DesignImages/SampleDashboard.png';
+import dashboard from '../assets/DesignImages/dashboard.png';
 import {TiThMenuOutline} from 'react-icons/ti';
 import PlandSi from './PlandSi';
 

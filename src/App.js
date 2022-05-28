@@ -11,7 +11,7 @@ import Conland from './components/Conland';
 import ConSales from './components/conSales';
 import CustomerSupport from './components/customerSupport';
 import Contact from './components/Navigation/Footer';
-import PowerBi from './components/ATpowerbiReport';
+import ATPowerBi from './components/ATpowerbiReport';
 function App() {
 
   return (
@@ -27,7 +27,7 @@ function App() {
       <Route exact path="/components/Csignin" element={<CorpSignin/>}/>
       <Route exact path="/components/conSales" element={<ConSales/>}/>
       <Route exact path="/components/customerSupport" element={<CustomerSupport/>}/>
-      <Route exact path="/components/ATpowerbiReport" element={<PowerBi/>}/>
+      <Route exact path="/components/ATpowerbiReport" element={<ATPowerBi/>}/>
       </Routes>
     </div>
   );

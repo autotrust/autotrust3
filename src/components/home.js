@@ -35,7 +35,6 @@ export default function Home(){
         <div>
             <Navbar />
             <Imgslider/> 
-            
              <Section/>
             <Middle/>
             {/* <div>
