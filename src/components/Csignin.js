@@ -102,7 +102,7 @@ function CorpSignin(){
         try{
             const user = await Auth.currentAuthenticatedUser()
             updateUser(user)
-            console.log('user:', user)
+            // console.log('user:', user)
             console.log("email:", user.attributes.email)
             updateUser(user)
             updateFormState(()=>({...formState, formType:"signedIn" }))
