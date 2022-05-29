@@ -6,7 +6,7 @@ import '../styles/PlandSi.css';
 import sli1 from '../assets/DesignImages/sli1.png';
 import sli2 from '../assets/DesignImages/sli2.png';
 import sli3 from '../assets/DesignImages/sli3.png';
-import ATPowerBi from "./ATpowerbiReport";
+// import ATPowerBi from "./ATpowerbiReport";
 
 
 export default function PlandSi(){
@@ -31,7 +31,7 @@ export default function PlandSi(){
     }
     return(
         <div>
-            <ATPowerBi input2={chCount1}/>
+            {/* <ATPowerBi input2={chCount1}/> */}
             <div className="container2">
                 <div id="rpl" className="row">
                 <div id="ks1" className="col">

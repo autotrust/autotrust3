@@ -20,7 +20,7 @@ const ATPowerBi= (props)=> {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hy ! {props.input2}</h1>
+        {/* <h1>Hy ! {props.input2}</h1> */}
       <PowerBIEmbed
           embedConfig={{
             
