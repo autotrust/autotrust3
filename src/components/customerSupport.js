@@ -16,7 +16,7 @@ function CustomerSupport(){
             </div>
             <div id="r4k" className="col-4">
                 <h3 id='cusS'>Customer Support</h3>
-                <h4 id='csup'><BiPhoneCall/>{" "} : 9876543210</h4>
+                <h4 id='csup'><BiPhoneCall/>{" "} : 9999999999</h4>
                 <h4 id='csup'><SiGmail/>{" "} : support@autotrust.co.in</h4>
             </div>
             <Contact/>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { models, Report, Embed, service, Page } from "powerbi-client";
 import { PowerBIEmbed } from "powerbi-client-react";
-import PlandSi from './PlandSi';
+// import PlandSi from './PlandSi';
 import '../styles/powerBi.css';
 
 const ATPowerBi= (props)=> {

@@ -165,13 +165,13 @@ function CorpSignin(){
 
                 {/* The generate report form type */}
                 {
-                    formType=='generateReport' && (
+                    formType==='generateReport' && (
                         <div>
                             <div class="container-fluid">
                                 <div class="row">
 
                                 <div class="col-3">
-                                <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" id='lg'></img>
+                                <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} alt="" className="logo" src={Logo} height="40" id='lg'></img>
                                 </div>
                                 <div id='rpnav' className='col-9'>
                                 {(toggleMenu || screenWidth > 500) && (
@@ -209,7 +209,7 @@ function CorpSignin(){
                             <div class="container-fluid">
                                 <div class="row">
                                 <div class="col-3">
-                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" id='lg'></img>
+                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} alt="" className="logo" src={Logo} height="40" id='lg'></img>
                                     </div>
                                     <div id='rpnav' className='col-9'>
                                     {(toggleMenu || screenWidth > 500) && (
@@ -252,7 +252,7 @@ function CorpSignin(){
                             <div class="container-fluid">
                                 <div class="row">
                                 <div class="col-3">
-                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" id='lg'></img>
+                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} alt="" className="logo" src={Logo} height="40" id='lg'></img>
                                     </div>
                                     <div id='rpnav' className='col-9'>
                                     {(toggleMenu || screenWidth > 500) && (
@@ -280,7 +280,7 @@ function CorpSignin(){
                                 </div>
                             </div>
                             
-                            <img className="dashboard" src={dashboard} id='db'></img>
+                            <img className="dashboard" src={dashboard} alt="" id='db'></img>
                             
                             
                         </div>
@@ -293,7 +293,7 @@ function CorpSignin(){
                         <div class="container-fluid">
                                 <div class="row">
                                 <div class="col-3">
-                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} className="logo" src={Logo} height="40" id='lg'></img>
+                                    <img onClick={() => updateFormState(()=>({...formState, formType:'signedIn'}))} alt="" className="logo" src={Logo} height="40" id='lg'></img>
                                     </div>
                                     <div id='rpnav' className='col-9'>
                                     {(toggleMenu || screenWidth > 500) && (
